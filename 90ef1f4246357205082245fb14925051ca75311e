@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "15d9c801_f5d82d43",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6731
+      },
+      "writtenOn": "2022-09-20T06:59:43Z",
+      "side": 1,
+      "message": "LGTM\nI think we need to declare a yaml configuration files with committers also",
+      "revId": "90ef1f4246357205082245fb14925051ca75311e",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    }
+  ]
+}
