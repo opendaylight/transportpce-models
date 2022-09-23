@@ -16,6 +16,23 @@
       "message": "LGTM",
       "revId": "eaa8550562cccc24ff3217cf9a820a706e2e6ef3",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "11132743_bf4fc832",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6731
+      },
+      "writtenOn": "2022-09-23T08:17:44Z",
+      "side": 1,
+      "message": "+ Daniel for information about the +2 ticket resolution",
+      "revId": "eaa8550562cccc24ff3217cf9a820a706e2e6ef3",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
     }
   ]
 }
