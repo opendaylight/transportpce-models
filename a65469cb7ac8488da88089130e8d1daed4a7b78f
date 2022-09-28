@@ -101,6 +101,40 @@
       "message": "recheck: 102494",
       "revId": "a65469cb7ac8488da88089130e8d1daed4a7b78f",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bf0c97c4_422de7b1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6731
+      },
+      "writtenOn": "2022-09-28T19:24:09Z",
+      "side": 1,
+      "message": "LGTM\n\nI noticed a few tabs and trailing blank. This can be addressed later.\nI propose we backport tox jobs from parent repo and activate it in Gerrit.",
+      "revId": "a65469cb7ac8488da88089130e8d1daed4a7b78f",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8804df11_fcecf609",
+        "filename": "features/odl-openroadm-models/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 6731
+      },
+      "writtenOn": "2022-09-28T19:24:09Z",
+      "side": 1,
+      "message": "some tabs here",
+      "revId": "a65469cb7ac8488da88089130e8d1daed4a7b78f",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
     }
   ]
 }
