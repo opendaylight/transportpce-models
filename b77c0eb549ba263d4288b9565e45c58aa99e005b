@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "80bb98a2_a53e17b9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6731
+      },
+      "writtenOn": "2022-09-29T08:26:51Z",
+      "side": 1,
+      "message": "I propose we declare a tox profile in releng to perform this in the CI",
+      "revId": "b77c0eb549ba263d4288b9565e45c58aa99e005b",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    }
+  ]
+}
