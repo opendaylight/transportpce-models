@@ -16,6 +16,24 @@
       "message": "Already fixed in change https://git.opendaylight.org/gerrit/c/transportpce/models/+/102503",
       "revId": "549e8dd758c3530331c78006ed5eac285f6ecabc",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5fa75e3e_3ed1811a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6731
+      },
+      "writtenOn": "2022-09-29T08:30:25Z",
+      "side": 1,
+      "message": "pointing a change unmerged and w/o any reviewer is not a good reason to block this one IMO",
+      "parentUuid": "a32c3c7a_f17d0f89",
+      "revId": "549e8dd758c3530331c78006ed5eac285f6ecabc",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
     }
   ]
 }
