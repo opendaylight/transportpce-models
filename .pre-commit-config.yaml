@@ -4,7 +4,7 @@ repos:
     rev: v4.0.1
     hooks:
       - id: trailing-whitespace
-        exclude: '^(.git/|docs/make.bat|docs/Makefile/|openroadm|tapi/)'
+        exclude: '^(.git/|docs/make.bat|docs/Makefile/)'
         # ordmodels trailing blanks shall preferably be fixed in OpenROADM upstream repo
 
   - repo: https://github.com/jorisroovers/gitlint
@@ -18,5 +18,5 @@ repos:
     hooks:
       - id: remove-tabs
         stages: [commit]
-        exclude: '^(.git/|docs/make.bat|docs/Makefile/|openroadm|tapi/)'
+        exclude: '^(.git/|docs/make.bat|docs/Makefile/)'
 
