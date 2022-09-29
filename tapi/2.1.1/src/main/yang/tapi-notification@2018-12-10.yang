@@ -599,5 +599,5 @@ module tapi-notification {
                 description "none";
             }
         }
-    }    
+    }
 }

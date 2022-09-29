@@ -240,7 +240,7 @@ module org-openroadm-controller-customization {
     type enumeration {
       enum add-drop {
         value 1;
-        description 
+        description
           "Add/drops are forbidden at the associated node (or site).
           No service may add or drop at site/node";
       }
@@ -249,11 +249,11 @@ module org-openroadm-controller-customization {
         description
           "Routing through the associated node (or site) is forbidden.
           No service may pass-through at site/node";
-      } 
+      }
       enum both {
         value 3;
         description
-          "Both adds/drops and through routing are forbidden for 
+          "Both adds/drops and through routing are forbidden for
           the associated node (or site).";
       }
     }
@@ -266,13 +266,13 @@ module org-openroadm-controller-customization {
       enum do-not-propose {
         value 1;
         description
-          "Proposing new regens (via a feasibility check) 
+          "Proposing new regens (via a feasibility check)
           at the associated node (or site) is forbidden.";
       }
       enum do-not-use-existing {
         value 2;
         description
-          "Use of an existing regen at the associated node 
+          "Use of an existing regen at the associated node
           (or site) is forbidden.";
       }
       enum both {
@@ -770,7 +770,7 @@ module org-openroadm-controller-customization {
       }
     }
   }
-  
+
   rpc controller-parameters-setting {
     description
       "Rpc used to populate controller parameters in the Data Store

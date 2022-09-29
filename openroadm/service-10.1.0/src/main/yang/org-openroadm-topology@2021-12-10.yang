@@ -131,11 +131,11 @@ module org-openroadm-topology {
         description
           "Unique identifier for this topology component within this service";
       }
-  	  container computation-results {
-		  description 
-			"parameters resulting of path computation";
-		  uses org-openroadm-resource:path-computation-outputs;
-	  }
+        container computation-results {
+          description
+            "parameters resulting of path computation";
+          uses org-openroadm-resource:path-computation-outputs;
+      }
       uses route_info;
       uses hop;
     }
@@ -146,11 +146,11 @@ module org-openroadm-topology {
         description
           "Unique identifier for this topology component within this service";
       }
-  	  container computation-results {
-		  description 
-			"parameters resulting of path computation";
-		  uses org-openroadm-resource:path-computation-outputs;
-	  }
+        container computation-results {
+          description
+            "parameters resulting of path computation";
+          uses org-openroadm-resource:path-computation-outputs;
+      }
       uses route_info;
       uses hop;
     }

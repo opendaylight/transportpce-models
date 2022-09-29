@@ -310,18 +310,18 @@ module org-openroadm-routing-constraints {
         enum serial {
           value 1;
           description
-            "Indicates that new services that are part of the bulk service request 
+            "Indicates that new services that are part of the bulk service request
             should be routed serially for diversity.";
         }
         enum synchronous {
           value 2;
           description
-            "Indicates that new services that are part of the bulk service request 
+            "Indicates that new services that are part of the bulk service request
             should be routed synchronously for diversity.";
         }
       }
-      description 
-        "This is only used when creating services using service-create-bulk. 
+      description
+        "This is only used when creating services using service-create-bulk.
         It is expected that 'diversity-type' should be same for all services,
         within the group. Which means it can be either 'serial' or 'synchronous'
         but not both.";

@@ -376,8 +376,8 @@ module org-openroadm-network-types {
   grouping SRLG-list{
     list SRLG-list {
       key "SRLG-Id";
-      description 
-        "List of all SRLG-Ids. Controller will be responsible to maintain completeness of SRLG-Ids by doing union of 
+      description
+        "List of all SRLG-Ids. Controller will be responsible to maintain completeness of SRLG-Ids by doing union of
          internal and external SRLG information.";
       leaf SRLG-Id {
         type uint32;

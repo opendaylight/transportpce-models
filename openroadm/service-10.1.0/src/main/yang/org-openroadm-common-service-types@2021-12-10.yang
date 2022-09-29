@@ -66,7 +66,7 @@ module org-openroadm-common-service-types {
     prefix org-openroadm-resource;
     revision-date 2021-12-10;
   }
-  
+
 
   organization
     "Open ROADM MSA";
@@ -891,7 +891,7 @@ module org-openroadm-common-service-types {
       }
       enum spectrum-portion {
         description
-          "Indicates reuse of frequency slot(s). Reuse the exact 	
+          "Indicates reuse of frequency slot(s). Reuse the exact
           or partial portion of the spectrum of the original service
           specturm";
         value 3;
@@ -916,13 +916,13 @@ module org-openroadm-common-service-types {
       leaf is-existing {
         type boolean;
         description
-          "This is set true if feasibility check is on an existing service with or 
-          without new constraints. Feasibility is done as if current service 
+          "This is set true if feasibility check is on an existing service with or
+          without new constraints. Feasibility is done as if current service
           and its resources are released";
       }
       leaf existing-service-name {
         when "../is-existing = 'true'";
-        type string; 
+        type string;
         description
           "Name of the existing service";
       }
@@ -936,7 +936,7 @@ module org-openroadm-common-service-types {
         type existing-resource-reuse-type;
         description
           "List of existing resources that can be reused;
-          This list is enabled only when the reuse-existing-equipment 
+          This list is enabled only when the reuse-existing-equipment
           is set true";
       }
     }
@@ -1745,9 +1745,9 @@ module org-openroadm-common-service-types {
       leaf is-reused {
         type boolean;
         description
-          "This flag is true if the spectral assignment overlaps--in part or in full--with 
-          that of the active instance of the service. A determination whether the overlap 
-          is full or partial requires a detailed comparison of spectral assignments; it 
+          "This flag is true if the spectral assignment overlaps--in part or in full--with
+          that of the active instance of the service. A determination whether the overlap
+          is full or partial requires a detailed comparison of spectral assignments; it
           is not indicated here.";
       }
     }

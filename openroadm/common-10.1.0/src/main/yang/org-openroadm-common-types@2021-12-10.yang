@@ -481,7 +481,7 @@ module org-openroadm-common-types {
         value 3;
         description
           "Link SRLG";
-      }    
+      }
     }
-  }  
+  }
 }

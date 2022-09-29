@@ -130,7 +130,7 @@ module org-openroadm-common-network {
     description
       "Introduce new network type for the Open ROADM common network";
     uses org-openroadm-network-types:SRLG-list;
-  }  
+  }
 
   augment "/nd:networks/nd:network/nd:node" {
     when '../nd:network-types/cnet:openroadm-common-network';
@@ -246,7 +246,7 @@ module org-openroadm-common-network {
           type leafref {
             path "/nd:networks/nd:network/SRLG-list/SRLG-Id";
           }
-        }  
+        }
       }
     }
     leaf administrative-group {

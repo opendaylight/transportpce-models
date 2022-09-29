@@ -936,15 +936,15 @@ module org-openroadm-probable-cause {
         description
           "Total Power Out Of Specification Low for multi-channel drop";
       }
-      enum "powerOutOfRangeLow" {        
-        value 292;        
+      enum "powerOutOfRangeLow" {
+        value 292;
         description
-          "Measured power is outside the supported or advertised power range";      
-      }      
-      enum "powerOutOfRangeHigh" {        
-        value 293;        
-        description          
-          "Measured power is outside the supported or advertised power range";      
+          "Measured power is outside the supported or advertised power range";
+      }
+      enum "powerOutOfRangeHigh" {
+        value 293;
+        description
+          "Measured power is outside the supported or advertised power range";
       }
       enum "remoteDefectIndication" {
         value 294;

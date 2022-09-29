@@ -52,7 +52,7 @@ module org-openroadm-common-phy-codes {
   }
 
   // BEGIN section for client phy code entities
-  
+
   // Parent identity
   identity client-phy-code-identity {
     description
@@ -119,7 +119,7 @@ module org-openroadm-common-phy-codes {
   }
   identity ethernet-40GBASE-T {
     base client-phy-code-identity;
-  }  
+  }
   identity ethernet-40GBASE-KR4 {
     base client-phy-code-identity;
   }
@@ -161,7 +161,7 @@ module org-openroadm-common-phy-codes {
   }
   identity ethernet-100GBASE-DR {
     base client-phy-code-identity;
-  }  
+  }
   identity ethernet-100GBASE-CR4 {
     base client-phy-code-identity;
   }
@@ -215,7 +215,7 @@ module org-openroadm-common-phy-codes {
   }
 
 
-  // http://psm4.org 
+  // http://psm4.org
   identity ethernet-100G-PSM4 {
     base client-phy-code-identity;
   }

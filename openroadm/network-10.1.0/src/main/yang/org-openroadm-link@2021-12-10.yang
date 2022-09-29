@@ -220,10 +220,10 @@ module org-openroadm-link {
             "Total PMD";
         }
         leaf subject-to-high-SOP-changes {
-      	  type boolean;
-      	  description
-      		  "identifies fibers that may experience high polarization rotation rates
-      		   and which might be inadequate for some modulation format";
+            type boolean;
+            description
+                "identifies fibers that may experience high polarization rotation rates
+                 and which might be inadequate for some modulation format";
         }
       }
     }
@@ -233,10 +233,10 @@ module org-openroadm-link {
           type leafref {
             path "/nd:networks/nd:network/cnet:SRLG-list/cnet:SRLG-Id";
           }
-        }  
+        }
       }
     }
-  } 
+  }
   grouping amplified-link-attributes {
     list amplified-link {
       key "section-elt-number";
