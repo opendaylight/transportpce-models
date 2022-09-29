@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "98bec880_48aa0807",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6731
+      },
+      "writtenOn": "2022-09-29T08:28:47Z",
+      "side": 1,
+      "message": "-2 \u003d\u003e not only tabs are removed here\n",
+      "revId": "36b771e8383d19bd9e69e15fc0f0c7f452411841",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    }
+  ]
+}
