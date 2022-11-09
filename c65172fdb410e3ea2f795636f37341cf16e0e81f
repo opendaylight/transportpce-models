@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0095a43e_c8059193",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6731
+      },
+      "writtenOn": "2022-11-09T09:24:55Z",
+      "side": 1,
+      "message": "I think it can be cherry-picked to master till we have the Argon bump",
+      "revId": "c65172fdb410e3ea2f795636f37341cf16e0e81f",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    }
+  ]
+}
