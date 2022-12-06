@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "789492a9_39cc1633",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 649
+      },
+      "writtenOn": "2022-12-06T15:30:04Z",
+      "side": 1,
+      "message": "The effect is this:\nnite@nitebug : ~/odl/models/features/odl-openroadm-devices on * $ diff -u feature.xml-old feature.xml-new \n--- feature.xml-old     2022-12-06 16:24:20.970518631 +0100\n+++ feature.xml-new     2022-12-06 16:28:22.546009550 +0100\n@@ -1,21 +1,11 @@\n \u003c?xml version\u003d\"1.0\" encoding\u003d\"UTF-8\" standalone\u003d\"yes\"?\u003e\n \u003cfeatures xmlns\u003d\"http://karaf.apache.org/xmlns/features/v1.6.0\" name\u003d\"odl-openroadm-devices\"\u003e\n+    \u003crepository\u003emvn:org.opendaylight.mdsal.model/odl-mdsal-model-rfc6991/10.0.3/xml/features\u003c/repository\u003e\n     \u003cfeature name\u003d\"odl-openroadm-devices\" description\u003d\"OpenDaylight :: transportpce-models :: openroadm-devices\" version\u003d\"18.0.0.SNAPSHOT\"\u003e\n         \u003cdetails\u003eodl-openroadm-devices\u003c/details\u003e\n+        \u003cfeature version\u003d\"10.0.3\" prerequisite\u003d\"false\" dependency\u003d\"false\"\u003eodl-mdsal-model-rfc6991\u003c/feature\u003e\n         \u003cbundle\u003emvn:org.opendaylight.transportpce.models/openroadm-device-1.2.1/18.0.0-SNAPSHOT\u003c/bundle\u003e\n         \u003cbundle\u003emvn:org.opendaylight.transportpce.models/openroadm-common-1.2.1/18.0.0-SNAPSHOT\u003c/bundle\u003e\n-        \u003cbundle\u003emvn:org.opendaylight.yangtools/yang-common/9.0.2\u003c/bundle\u003e\n-        \u003cbundle\u003emvn:org.opendaylight.yangtools/concepts/9.0.2\u003c/bundle\u003e\n-        \u003cbundle\u003emvn:org.opendaylight.mdsal.binding.model.ietf/rfc6991-ietf-inet-types/10.0.3\u003c/bundle\u003e\n-        \u003cbundle\u003emvn:org.opendaylight.mdsal.model/ietf-type-util/10.0.3\u003c/bundle\u003e\n-        \u003cbundle\u003emvn:org.opendaylight.mdsal/mdsal-binding-spec-util/10.0.3\u003c/bundle\u003e\n-        \u003cbundle\u003emvn:org.opendaylight.mdsal/yang-binding/10.0.3\u003c/bundle\u003e\n-        \u003cbundle\u003emvn:org.opendaylight.yangtools/util/9.0.2\u003c/bundle\u003e\n-        \u003cbundle\u003emvn:tech.pantheon.triemap/triemap/1.2.0\u003c/bundle\u003e\n-        \u003cbundle\u003emvn:org.opendaylight.mdsal.binding.model.ietf/rfc6991-ietf-yang-types/10.0.3\u003c/bundle\u003e\n-        \u003cbundle\u003emvn:com.google.guava/guava/31.1-jre\u003c/bundle\u003e\n-        \u003cbundle\u003emvn:com.google.guava/failureaccess/1.0.1\u003c/bundle\u003e\n-        \u003cbundle\u003emvn:org.checkerframework/checker-qual/3.12.0\u003c/bundle\u003e\n         \u003cbundle\u003emvn:org.opendaylight.netconf.model/rfc6241/4.0.2\u003c/bundle\u003e\n         \u003cbundle\u003emvn:org.opendaylight.transportpce.models/openroadm-device-2.2.1/18.0.0-SNAPSHOT\u003c/bundle\u003e\n         \u003cbundle\u003emvn:org.opendaylight.transportpce.models/openroadm-common-2.2.1/18.0.0-SNAPSHOT\u003c/bundle\u003e\n",
+      "revId": "9e6ccf504dfbc7dc6ee96a787e3f112f652a58da",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    }
+  ]
+}
