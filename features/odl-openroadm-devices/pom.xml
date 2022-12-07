@@ -25,6 +25,13 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
   <dependencyManagement>
     <dependencies>
       <dependency>
+        <groupId>org.opendaylight.mdsal</groupId>
+        <artifactId>mdsal-artifacts</artifactId>
+        <version>10.0.5</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
+      <dependency>
         <groupId>org.opendaylight.netconf</groupId>
         <artifactId>netconf-artifacts</artifactId>
         <version>4.0.4</version>
@@ -35,6 +42,18 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
   </dependencyManagement>
 
   <dependencies>
+    <dependency>
+      <groupId>org.opendaylight.mdsal</groupId>
+      <artifactId>odl-mdsal-binding-base</artifactId>
+      <classifier>features</classifier>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opendaylight.netconf</groupId>
+      <artifactId>odl-netconf-api</artifactId>
+      <classifier>features</classifier>
+      <type>xml</type>
+    </dependency>
     <dependency>
       <groupId>org.opendaylight.transportpce.models</groupId>
       <artifactId>openroadm-device-1.2.1</artifactId>
