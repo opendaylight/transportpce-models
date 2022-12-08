@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f134f5e5_1a5484c0",
+        "filename": "artifacts/pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 6731
+      },
+      "writtenOn": "2022-12-08T08:07:51Z",
+      "side": 1,
+      "message": "2016 really ?",
+      "revId": "7af32d7814afe46d5c9b0a2778ed94ba51612987",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    }
+  ]
+}
