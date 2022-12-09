@@ -22,6 +22,7 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
   <packaging>pom</packaging>
 
   <modules>
+    <module>features-transportpce-models</module>
     <module>odl-openroadm-devices</module>
     <module>odl-openroadm-models</module>
     <module>odl-tapi-models</module>
