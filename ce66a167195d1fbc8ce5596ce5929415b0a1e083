@@ -16,6 +16,24 @@
       "message": "oops, the tapi-2.1.1 bundle is missing...",
       "revId": "ce66a167195d1fbc8ce5596ce5929415b0a1e083",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6b6c8631_7803e203",
+        "filename": "artifacts/pom.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7446
+      },
+      "writtenOn": "2022-12-09T14:01:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "48658042_83a99857",
+      "revId": "ce66a167195d1fbc8ce5596ce5929415b0a1e083",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
     }
   ]
 }
