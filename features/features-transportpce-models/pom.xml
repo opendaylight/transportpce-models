@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Copyright © 2016 Orange and others. All rights reserved.
+Copyright © 2022 Orange and others. All rights reserved.
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License v1.0 which accompanies this distribution,
@@ -11,16 +11,16 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
 
   <parent>
     <groupId>org.opendaylight.odlparent</groupId>
-    <artifactId>single-feature-parent</artifactId>
+    <artifactId>feature-repo-parent</artifactId>
     <version>11.0.3</version>
     <relativePath/>
   </parent>
 
   <groupId>org.opendaylight.transportpce.models</groupId>
-  <artifactId>odl-openroadm-devices</artifactId>
+  <artifactId>features-transportpce-models</artifactId>
   <version>18.0.0-SNAPSHOT</version>
   <packaging>feature</packaging>
-  <name>OpenDaylight :: transportpce-models :: openroadm-devices</name>
+  <name>OpenDaylight :: TransportPCE - Models :: Features</name>
 
   <dependencyManagement>
     <dependencies>
@@ -31,47 +31,27 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
         <scope>import</scope>
         <type>pom</type>
       </dependency>
-      <dependency>
-        <groupId>org.opendaylight.mdsal</groupId>
-        <artifactId>mdsal-artifacts</artifactId>
-        <version>10.0.5</version>
-        <scope>import</scope>
-        <type>pom</type>
-      </dependency>
-      <dependency>
-        <groupId>org.opendaylight.netconf</groupId>
-        <artifactId>netconf-artifacts</artifactId>
-        <version>4.0.4</version>
-        <scope>import</scope>
-        <type>pom</type>
-      </dependency>
     </dependencies>
   </dependencyManagement>
 
   <dependencies>
     <dependency>
-      <groupId>org.opendaylight.mdsal.model</groupId>
-      <artifactId>odl-mdsal-model-rfc6991</artifactId>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>odl-openroadm-devices</artifactId>
       <classifier>features</classifier>
       <type>xml</type>
     </dependency>
     <dependency>
-      <groupId>org.opendaylight.netconf</groupId>
-      <artifactId>odl-netconf-api</artifactId>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>odl-openroadm-models</artifactId>
       <classifier>features</classifier>
       <type>xml</type>
     </dependency>
     <dependency>
-      <groupId>org.opendaylight.transportpce.models</groupId>
-      <artifactId>openroadm-device-1.2.1</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.opendaylight.transportpce.models</groupId>
-      <artifactId>openroadm-device-2.2.1</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.opendaylight.transportpce.models</groupId>
-      <artifactId>openroadm-device-7.1.0</artifactId>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>odl-tapi-models</artifactId>
+      <classifier>features</classifier>
+      <type>xml</type>
     </dependency>
   </dependencies>
 </project>
