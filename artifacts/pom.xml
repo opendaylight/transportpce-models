@@ -103,6 +103,11 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
         <artifactId>tapi-2.1.1</artifactId>
         <version>${project.version}</version>
       </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>tapi-2.4.0</artifactId>
+        <version>${project.version}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 </project>
