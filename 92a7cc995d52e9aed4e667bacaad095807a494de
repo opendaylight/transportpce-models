@@ -73,6 +73,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "224280f6_05073830",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6731
+      },
+      "writtenOn": "2023-01-20T08:41:32Z",
+      "side": 1,
+      "message": "Thanks, here is my opinion.\nThis kind of problems should preferably be addressed directly in the TAPI community.\nI think we should focus only on trailing blanks / tabs / license description issues here for the moment.\nIf this is really problematic for us. We can modify the models here but we would have to create a proper notices for the resulting jar and trace it in JIRA.",
+      "parentUuid": "a47013ae_1beb55ba",
+      "revId": "92a7cc995d52e9aed4e667bacaad095807a494de",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "5053a98c_518906db",
         "filename": "tapi/2.4.0/pom.xml",
         "patchSetId": 2
