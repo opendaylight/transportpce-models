@@ -91,6 +91,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f95425d9_33ab8555",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7446
+      },
+      "writtenOn": "2023-01-20T08:51:04Z",
+      "side": 1,
+      "message": "I agree",
+      "parentUuid": "224280f6_05073830",
+      "revId": "92a7cc995d52e9aed4e667bacaad095807a494de",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "5053a98c_518906db",
         "filename": "tapi/2.4.0/pom.xml",
         "patchSetId": 2
