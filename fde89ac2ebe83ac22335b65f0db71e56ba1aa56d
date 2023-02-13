@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7ef25ef0_03e6eaec",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7446
+      },
+      "writtenOn": "2023-02-13T09:09:59Z",
+      "side": 1,
+      "message": "Something changed with mdsal-11.0.6 wrt 11.0.4?\n\n[ERROR] SingleFeatureTest.installFeatureCatchAndLog(org.opendaylight.odlparent.featuretest.SingleFeatureTest)[repoUrl: file:/w/workspace/transportpce-models-maven-verify-master-mvn38-openjdk17/features/odl-openroadm-devices/target/feature/feature.xml, Feature: odl-openroadm-devices 18.0.0.SNAPSHOT]  Time elapsed: 15.702 s  \u003c\u003c\u003c ERROR!\norg.apache.felix.resolver.reason.ReasonException: Unable to resolve odl-openroadm-devices/18.0.0.SNAPSHOT: missing requirement [odl-openroadm-devices/18.0.0.SNAPSHOT] osgi.identity; osgi.identity\u003dodl-mdsal-model-rfc6991; type\u003dkaraf.feature; version\u003d\"[11.0.6,11.0.6]\"",
+      "revId": "fde89ac2ebe83ac22335b65f0db71e56ba1aa56d",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    }
+  ]
+}
