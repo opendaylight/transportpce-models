@@ -4,6 +4,7 @@ module tapi-streaming {
     prefix tapi-streaming;
     import tapi-common {
         prefix tapi-common;
+        revision-date 2022-11-21;
     }
     organization "ONF OTCC (Open Transport Configuration & Control) Project";
     contact "

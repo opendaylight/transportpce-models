@@ -4,6 +4,7 @@ module tapi-dsr {
     prefix tapi-dsr;
     import tapi-common {
         prefix tapi-common;
+        revision-date 2022-11-21;
     }
     organization "ONF OTCC (Open Transport Configuration & Control) Project";
     contact "
