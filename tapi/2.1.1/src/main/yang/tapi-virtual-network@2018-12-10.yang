@@ -3,9 +3,11 @@ module tapi-virtual-network {
     prefix tapi-virtual-network;
     import tapi-topology {
         prefix tapi-topology;
+        revision-date 2018-12-10;
     }
     import tapi-common {
         prefix tapi-common;
+        revision-date 2018-12-10;
     }
     organization "ONF OTCC (Open Transport Configuration & Control) Project";
     contact "

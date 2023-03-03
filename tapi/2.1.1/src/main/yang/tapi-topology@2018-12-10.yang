@@ -3,6 +3,7 @@ module tapi-topology {
     prefix tapi-topology;
     import tapi-common {
         prefix tapi-common;
+        revision-date 2018-12-10;
     }
     organization "ONF OTCC (Open Transport Configuration & Control) Project";
     contact "

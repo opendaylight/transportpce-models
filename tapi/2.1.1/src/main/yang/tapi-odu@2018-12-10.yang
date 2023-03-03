@@ -3,18 +3,23 @@ module tapi-odu {
     prefix tapi-odu;
     import tapi-common {
         prefix tapi-common;
+        revision-date 2018-12-10;
     }
     import tapi-connectivity {
         prefix tapi-connectivity;
+        revision-date 2018-12-10;
     }
     import tapi-topology {
         prefix tapi-topology;
+        revision-date 2018-12-10;
     }
     import tapi-oam {
         prefix tapi-oam;
+        revision-date 2018-12-10;
     }
     import tapi-dsr {
         prefix tapi-dsr;
+        revision-date 2018-12-10;
     }
     organization "ONF OTCC (Open Transport Configuration & Control) Project";
     contact "
