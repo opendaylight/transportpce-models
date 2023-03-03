@@ -17,7 +17,7 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
   </parent>
 
   <groupId>org.opendaylight.transportpce.models</groupId>
-  <artifactId>odl-tapi-models</artifactId>
+  <artifactId>odl-tapi-2.1.1-models</artifactId>
   <version>18.0.0-SNAPSHOT</version>
   <packaging>feature</packaging>
   <name>OpenDaylight :: transportpce-models :: tapi-models-all</name>
@@ -51,10 +51,6 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
     <dependency>
       <groupId>org.opendaylight.transportpce.models</groupId>
       <artifactId>tapi-2.1.1</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.opendaylight.transportpce.models</groupId>
-      <artifactId>tapi-2.4.0</artifactId>
     </dependency>
   </dependencies>
 </project>
