@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "78a4200b_f12144e8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6731
+      },
+      "writtenOn": "2023-03-08T08:07:58Z",
+      "side": 1,
+      "message": "LGTM\n\nThere might also be project bump and docs/conf.py etc modifications here and in master branch",
+      "revId": "590c8808c25d77c5bea2530cbf7f8f400be1bef2",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    }
+  ]
+}
