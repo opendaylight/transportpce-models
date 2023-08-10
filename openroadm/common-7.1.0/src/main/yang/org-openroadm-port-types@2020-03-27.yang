@@ -162,6 +162,10 @@ module org-openroadm-port-types {
     base supported-if-capability;
   }
 
+  identity if-OTUCn-ODUCn-regen {
+    base supported-if-capability;
+  }
+
   identity if-otsi-flexo-flexogroup {
     base supported-if-capability;
   }
