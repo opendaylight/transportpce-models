@@ -31,7 +31,8 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
     <module>device-7.1.0</module>
     <module>common-10.1.0</module>
     <module>network-10.1.0</module>
-    <module>service-10.1.0</module>
+    <module>common-13.1.0</module>
+    <module>service-13.1.0</module>
   </modules>
 
   <build>

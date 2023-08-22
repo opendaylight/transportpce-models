@@ -12,11 +12,11 @@ module org-openroadm-common-service-types {
   }
   import org-openroadm-routing-constraints {
     prefix org-openroadm-routing-constraints;
-    revision-date 2021-12-10;
+    revision-date 2022-12-09;
   }
   import org-openroadm-topology {
     prefix org-openroadm-topology;
-    revision-date 2021-12-10;
+    revision-date 2023-05-26;
   }
   import org-openroadm-common-equipment-types {
     prefix org-openroadm-common-equipment-types;
@@ -32,7 +32,7 @@ module org-openroadm-common-service-types {
   }
   import org-openroadm-resource-types {
     prefix org-openroadm-resource-types;
-    revision-date 2021-09-24;
+    revision-date 2022-03-25;
   }
   import org-openroadm-otn-common-types {
     prefix org-openroadm-otn-common-types;
@@ -40,7 +40,7 @@ module org-openroadm-common-service-types {
   }
   import org-openroadm-common-types {
     prefix org-openroadm-common-types;
-    revision-date 2021-12-10;
+    revision-date 2023-05-26;
   }
   import org-openroadm-equipment-states-types {
     prefix org-openroadm-equipment-states-types;
@@ -56,15 +56,19 @@ module org-openroadm-common-service-types {
   }
   import org-openroadm-common-phy-codes {
     prefix org-openroadm-common-phy-codes;
-    revision-date 2021-05-28;
+    revision-date 2022-05-27;
   }
   import org-openroadm-common-optical-channel-types {
     prefix org-openroadm-common-optical-channel-types;
-    revision-date 2021-12-10;
+    revision-date 2023-05-26;
+  }
+  import org-openroadm-common-link-types {
+    prefix org-openroadm-common-link-types;
+    revision-date 2019-11-29;
   }
   import org-openroadm-resource {
     prefix org-openroadm-resource;
-    revision-date 2021-12-10;
+    revision-date 2023-05-26;
   }
 
 
@@ -101,6 +105,30 @@ module org-openroadm-common-service-types {
       ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
       POSSIBILITY OF SUCH DAMAGE";
 
+  revision 2023-05-26 {
+    description
+      "Version 13.1";
+  }
+  revision 2023-03-31 {
+    description
+      "Version 13.0";
+  }
+  revision 2022-12-09 {
+    description
+      "Version 12.1";
+  }
+  revision 2022-09-30 {
+    description
+      "Version 12.0";
+  }
+  revision 2022-05-27 {
+    description
+      "Version 11.1";
+  }
+  revision 2022-03-25 {
+    description
+      "Version 11.0";
+  }
   revision 2021-12-10 {
     description
       "Version 10.1";
@@ -286,6 +314,18 @@ module org-openroadm-common-service-types {
       enum fill-catalog-with-specific-operational-modes {
           value 20;
       }
+      enum end-terminal-performance-info-request {
+          value 21;
+      }
+      enum end-terminal-activation-request {
+          value 22;
+      }
+      enum end-terminal-deactivation-request {
+          value 23;
+      }
+      enum end-terminal-power-control {
+          value 24;
+      }
     }
     description
       "rpc-actions include all the rpc methods";
@@ -362,7 +402,21 @@ module org-openroadm-common-service-types {
       enum path-computation-failed {
         value 9;
       }
+      enum end-terminal-activation-status {
+          value 10;
+      }
     }
+  }
+
+  typedef end-terminal-activation-status-type {
+    type enumeration {
+       enum activated {
+         value 1;
+       }
+       enum deactivated {
+         value 2;
+       }
+     }
   }
 
   typedef connection-type {
@@ -566,6 +620,35 @@ module org-openroadm-common-service-types {
     }
     container service-z-end {
       uses service-endpoint-summary;
+    }
+  }
+
+  grouping alien-service-ends-setting-container {
+    container service-a-end {
+      uses service-endpoint-summary;
+        leaf min-output-power {
+          type org-openroadm-common-link-types:power-dBm;
+          description
+            "the minimum power that can be set on end-terminal network port";
+      }
+        leaf max-output-power {
+          type org-openroadm-common-link-types:power-dBm;
+          description
+            "the maximum power that can be set on end-terminal network port";
+      }
+    }
+    container service-z-end {
+      uses service-endpoint-summary;
+        leaf min-output-power {
+          type org-openroadm-common-link-types:power-dBm;
+          description
+            "the minimum power that can be set on end-terminal network port";
+      }
+      leaf max-output-power {
+          type org-openroadm-common-link-types:power-dBm;
+          description
+            "the maximum power that can be set on end-terminal network port";
+      }
     }
   }
 
@@ -1468,11 +1551,59 @@ module org-openroadm-common-service-types {
       description
         "Service Condition: Additional information about the state of the service. Only sent when applicable.";
     }
+    leaf frequency {
+       when "../connection-type = 'optical-tunnel'" {
+         description
+           "Describes the frequency used by the external optical transceiver handled by a 3rd party
+            controller for an optical-tunnel service";
+      }
+      type org-openroadm-common-optical-channel-types:frequency-THz;
+      description
+        "Center Frequency in THz.";
+    }
+    leaf width {
+      when "../connection-type = 'optical-tunnel'" {
+        description
+          "Describes the och/otsi width used by the external optical transceiver handled by a 3rd party
+           controller for an optical-tunnel service";
+      }
+      type org-openroadm-common-optical-channel-types:frequency-GHz;
+      description
+        "Frequency width in GHz.";
+    }
     container service-a-end {
-      uses service-endpoint;
+        uses service-endpoint;
+        container optical-attributes {
+            when "../../connection-type = 'optical-tunnel' or ../../connection-type = 'infrastructure'" {
+              description
+                "Describes settings and expected performances that might differ from one to the other end
+                  and which apply to Xponders for an infrastructure service, and to external optical transceivers
+                handled by a 3rd party controller for an optical-tunnel service";
+            }
+            leaf operational-mode {
+                type string;
+                description
+                  "the supported operational mode : either openROADM or specific ";
+            }
+            uses org-openroadm-resource:path-computation-outputs;
+        }
     }
     container service-z-end {
       uses service-endpoint;
+      container optical-attributes {
+          when "../../connection-type = 'optical-tunnel' or ../../connection-type = 'infrastructure'" {
+            description
+                "Describes settings and expected performances that might differ from one to the other end
+                  and which apply to Xponders for an infrastructure service, and to external optical transceivers
+                handled by a 3rd party controller for an optical-tunnel service";
+          }
+          leaf operational-mode {
+              type string;
+              description
+                "the supported operational mode : either openROADM or specific ";
+          }
+          uses org-openroadm-resource:path-computation-outputs;
+      }
     }
     uses org-openroadm-routing-constraints:routing-constraints;
     uses service-information;
