@@ -17,14 +17,31 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
   </parent>
 
   <groupId>org.opendaylight.transportpce.models</groupId>
-  <artifactId>openroadm-common-10.1.0</artifactId>
+  <artifactId>openroadm-network-13.1.0</artifactId>
   <version>19.0.0-SNAPSHOT</version>
   <packaging>bundle</packaging>
 
   <dependencies>
     <dependency>
+      <groupId>org.opendaylight.transportpce.models</groupId>
+      <artifactId>openroadm-common-13.1.0</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
       <groupId>org.opendaylight.yangtools</groupId>
       <artifactId>yang-common</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.opendaylight.mdsal.binding.model.ietf</groupId>
+      <artifactId>rfc8345-ietf-network-topology</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.opendaylight.mdsal.binding.model.ietf</groupId>
+      <artifactId>rfc8345-ietf-network</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.opendaylight.mdsal.binding.model.ietf</groupId>
+      <artifactId>rfc6991-ietf-inet-types</artifactId>
     </dependency>
     <dependency>
       <groupId>org.opendaylight.mdsal.binding.model.ietf</groupId>

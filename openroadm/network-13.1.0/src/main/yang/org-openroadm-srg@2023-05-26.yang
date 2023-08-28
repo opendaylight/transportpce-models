@@ -1,19 +1,11 @@
-module org-openroadm-external-pluggable {
+module org-openroadm-srg {
   yang-version 1.1;
-  namespace "http://org/openroadm/external/pluggable";
-  prefix plg;
+  namespace "http://org/openroadm/srg";
+  prefix srg;
 
-  import org-openroadm-common-equipment-types {
-    prefix org-openroadm-common-equipment-types;
-    revision-date 2019-11-29;
-  }
-  import org-openroadm-common-state-types {
-    prefix org-openroadm-common-state-types;
-    revision-date 2019-11-29;
-  }
   import org-openroadm-common-optical-channel-types {
     prefix org-openroadm-common-optical-channel-types;
-    revision-date 2021-12-10;
+    revision-date 2023-05-26;
   }
 
   organization
@@ -21,8 +13,7 @@ module org-openroadm-external-pluggable {
   contact
     "OpenROADM.org.";
   description
-    "YANG definitions for External Pluggable
-
+    "YANG definitions for an Add/Drop group in Network Model
 
      Copyright of the Members of the Open ROADM MSA Agreement dated (c) 2016,
      All other rights reserved.
@@ -50,6 +41,10 @@ module org-openroadm-external-pluggable {
      ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
      POSSIBILITY OF SUCH DAMAGE.";
 
+  revision 2023-05-26 {
+    description
+      "Version 13.1";
+  }
   revision 2021-12-10 {
     description
       "Version 10.1";
@@ -119,49 +114,28 @@ module org-openroadm-external-pluggable {
       "Version 1.2";
   }
 
-  grouping pluggable-node-attributes {
-    leaf pluggable-id {
+  grouping srg-node-attributes {
+    leaf srg-number {
+      type uint16;
+    }
+    leaf max-pp {
+      type uint32;
+      description
+        "Maximum number of add/drop port pairs in an SRG";
+    }
+    leaf current-provisioned-pp {
+      type uint32;
+      description
+        "current provisioned number of port pair in a given SRG";
+    }
+    leaf wavelength-duplication {
+      type org-openroadm-common-optical-channel-types:wavelength-duplication-type;
+    }
+    leaf-list supported-operational-modes {
       type string;
+      config true;
       description
-        "Network-wide unique identifier for a pluggable";
-    }
-    leaf customer-code {
-      type string;
-      description
-        "Owner of the pluggable";
-    }
-    container tail {
-      leaf client-equipment {
-        type string;
-      }
-      leaf client-equipment-id {
-        type string;
-      }
-      leaf clfi {
-        type string;
-      }
-    }
-  }
-
-  grouping pluggable-tp-attributes {
-    leaf rate {
-      type identityref {
-        base org-openroadm-common-optical-channel-types:och-rate-identity;
-      }
-      description
-        "rate";
-    }
-    leaf modulation-format {
-      type org-openroadm-common-optical-channel-types:modulation-format;
-    }
-    leaf optic {
-      type org-openroadm-common-equipment-types:optic-types;
-    }
-    leaf state {
-      type org-openroadm-common-state-types:state;
-      description
-        "A xponder can be in one of the following
-               states";
+        "defines the supported openroadm specifications";
     }
   }
 }
