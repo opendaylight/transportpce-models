@@ -1,4 +1,22 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "17e471dc_2ce59440",
+        "filename": "openroadm/common-7.1.0/src/main/yang/org-openroadm-port-types@2020-03-27.yang",
+        "patchSetId": 1
+      },
+      "lineNbr": 168,
+      "author": {
+        "id": 6731
+      },
+      "writtenOn": "2023-08-31T14:39:56Z",
+      "side": 1,
+      "message": "please can we at least add a comment to state clearly this is not part of the official model?",
+      "revId": "894ab0d5efb6b65d7c60e4a34e6dbd520681fe41",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    }
+  ],
   "submitRequirementResults": []
 }
