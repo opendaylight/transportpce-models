@@ -1,0 +1,7 @@
+Code-Review+2: Gilles Thouenon <gilles.thouenon@orange.com>
+Verified+1: jenkins-releng ODL
+Submitted-by: Gilles Thouenon <gilles.thouenon@orange.com>
+Submitted-at: Tue, 26 Sep 2023 09:14:59 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/c/transportpce/models/+/107987
+Project: transportpce/models
+Branch: refs/heads/stable/argon
