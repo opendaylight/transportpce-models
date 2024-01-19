@@ -59,6 +59,14 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
         <type>xml</type>
         <classifier>features</classifier>
       </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>odl-openconfig-models</artifactId>
+        <version>${project.version}</version>
+        <type>xml</type>
+        <classifier>features</classifier>
+      </dependency>
+
       <!-- transportpce-models bundles -->
       <dependency>
         <groupId>${project.groupId}</groupId>
@@ -118,6 +126,11 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>tapi-2.4.0</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>openconfig-240119</artifactId>
         <version>${project.version}</version>
       </dependency>
     </dependencies>
