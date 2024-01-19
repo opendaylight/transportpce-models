@@ -26,6 +26,7 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
     <module>artifacts</module>
     <module>openroadm</module>
     <module>tapi</module>
+    <module>openconfig</module>
     <module>features</module>
   </modules>
 
