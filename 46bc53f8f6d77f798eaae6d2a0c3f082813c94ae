@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "838f7d76_368a4ec5",
+        "filename": "features/odl-openconfig-models/pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 6731
+      },
+      "writtenOn": "2024-01-29T15:14:01Z",
+      "side": 1,
+      "message": "2024 ?",
+      "revId": "46bc53f8f6d77f798eaae6d2a0c3f082813c94ae",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6d331132_0d77271d",
+        "filename": "openconfig/openconfig-240119/pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 6731
+      },
+      "writtenOn": "2024-01-29T15:14:01Z",
+      "side": 1,
+      "message": "2024 ?",
+      "revId": "46bc53f8f6d77f798eaae6d2a0c3f082813c94ae",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "55a0b288_d19d3555",
+        "filename": "openconfig/pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 6731
+      },
+      "writtenOn": "2024-01-29T15:14:01Z",
+      "side": 1,
+      "message": "2024?",
+      "revId": "46bc53f8f6d77f798eaae6d2a0c3f082813c94ae",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    }
+  ]
+}
