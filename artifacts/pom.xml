@@ -97,6 +97,11 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
       </dependency>
       <dependency>
         <groupId>${project.groupId}</groupId>
+        <artifactId>openroadm-device-13.1.0</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
         <artifactId>openroadm-network-13.1.0</artifactId>
         <version>${project.version}</version>
       </dependency>

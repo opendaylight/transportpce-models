@@ -73,5 +73,9 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
       <groupId>org.opendaylight.transportpce.models</groupId>
       <artifactId>openroadm-device-7.1.0</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.opendaylight.transportpce.models</groupId>
+      <artifactId>openroadm-device-13.1.0</artifactId>
+    </dependency>
   </dependencies>
 </project>
