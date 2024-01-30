@@ -7,3 +7,8 @@ More details at the http://www.openconfig.net/ web site.
 OpenConfig models license is usually not mentioned in their YANG description
 field. Exceptions include models derived from the IETF works and originally
 published under the IETF license.
+
+
+org-openroadm-lldp model is a modified version of the official one that still
+imports the deprecated iana-afn-safi. Here it is replaced by iana-routing-types
+in revision 2022-08-19.
