@@ -16,6 +16,24 @@
       "message": "Thanks Gilles for this huge integration work: not that easy to figure out what\u0027s the correct set of models to be included in versions that do not rely on OpenConfig Tag to identify the releases!!!! I suggest to add one model that we may needs if it is not too complex : this the model openconfig-transport-line-connectivity which might be used in the description of ports. Thanks!",
       "revId": "fef88fc011726778b288f142ab707e769918b101",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea39040e_f1a093da",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7446
+      },
+      "writtenOn": "2024-01-31T16:58:55Z",
+      "side": 1,
+      "message": "OK. Done. Revision 2019-06-27. Quite old model which seems has not evolved since.",
+      "parentUuid": "b5f1d135_b93e7d3c",
+      "revId": "fef88fc011726778b288f142ab707e769918b101",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
     }
   ]
 }
