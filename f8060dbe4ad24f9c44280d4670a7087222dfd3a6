@@ -51,6 +51,24 @@
       "parentUuid": "ec850906_79a5b570",
       "revId": "f8060dbe4ad24f9c44280d4670a7087222dfd3a6",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cda6dfec_b731619e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 9118
+      },
+      "writtenOn": "2024-02-02T10:59:24Z",
+      "side": 1,
+      "message": "Thanks Gilles.\n\nNoticed that we also need to add openconfig-terminal-device.yang 1.7.3 (2020-05-09)",
+      "parentUuid": "f8daa2d5_e0d240ec",
+      "revId": "f8060dbe4ad24f9c44280d4670a7087222dfd3a6",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
     }
   ]
 }
