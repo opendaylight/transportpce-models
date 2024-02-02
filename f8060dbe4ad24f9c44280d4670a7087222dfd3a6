@@ -16,6 +16,23 @@
       "message": "Done",
       "revId": "f8060dbe4ad24f9c44280d4670a7087222dfd3a6",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ec850906_79a5b570",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 9118
+      },
+      "writtenOn": "2024-02-02T08:20:52Z",
+      "side": 1,
+      "message": "Hi Gilles,\n\nCan you please also add https://github.com/openconfig/public/blob/master/release/models/optical-transport/openconfig-transport-line-common.yang?\n\nThis will be needed to read the optical-port container inside components of type PORT.",
+      "revId": "f8060dbe4ad24f9c44280d4670a7087222dfd3a6",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
     }
   ]
 }
