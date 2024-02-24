@@ -16,6 +16,24 @@
       "message": "Is there anywhere any notice or LICENSE file mentioning the original license of openconfig models ?",
       "revId": "994fbecc02a53d130bf1a6385e91147df710839f",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "78d66b9b_b6d4858d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7446
+      },
+      "writtenOn": "2024-02-24T14:10:49Z",
+      "side": 1,
+      "message": "Not yet. Done in PS 7.",
+      "parentUuid": "434bcf8b_8dbf4d3f",
+      "revId": "994fbecc02a53d130bf1a6385e91147df710839f",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
     }
   ]
 }
