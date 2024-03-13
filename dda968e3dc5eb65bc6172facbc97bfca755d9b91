@@ -1,0 +1,113 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "271f0f60_09913326",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7446
+      },
+      "writtenOn": "2024-03-13T13:15:36Z",
+      "side": 1,
+      "message": "Need to align upstream dependencies to versions currently used by other modules on this branch.",
+      "revId": "dda968e3dc5eb65bc6172facbc97bfca755d9b91",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3016296f_5f15ec7a",
+        "filename": "features/odl-openconfig-models/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 7446
+      },
+      "writtenOn": "2024-03-13T13:15:36Z",
+      "side": 1,
+      "message": "should be 13.0.10",
+      "range": {
+        "startLine": 15,
+        "startChar": 13,
+        "endLine": 15,
+        "endChar": 19
+      },
+      "revId": "dda968e3dc5eb65bc6172facbc97bfca755d9b91",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f7b55c71_65ec1967",
+        "filename": "features/odl-openconfig-models/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 7446
+      },
+      "writtenOn": "2024-03-13T13:15:36Z",
+      "side": 1,
+      "message": "should be 12.0.4",
+      "range": {
+        "startLine": 37,
+        "startChar": 17,
+        "endLine": 37,
+        "endChar": 23
+      },
+      "revId": "dda968e3dc5eb65bc6172facbc97bfca755d9b91",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c3f4cb71_2d4f9b8d",
+        "filename": "openconfig/openconfig-240119/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 7446
+      },
+      "writtenOn": "2024-03-13T13:15:36Z",
+      "side": 1,
+      "message": "12.0.4",
+      "range": {
+        "startLine": 15,
+        "startChar": 13,
+        "endLine": 15,
+        "endChar": 19
+      },
+      "revId": "dda968e3dc5eb65bc6172facbc97bfca755d9b91",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "94a70583_a2ba7809",
+        "filename": "openconfig/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 7446
+      },
+      "writtenOn": "2024-03-13T13:15:36Z",
+      "side": 1,
+      "message": "13.0.10",
+      "range": {
+        "startLine": 15,
+        "startChar": 14,
+        "endLine": 15,
+        "endChar": 19
+      },
+      "revId": "dda968e3dc5eb65bc6172facbc97bfca755d9b91",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    }
+  ]
+}
