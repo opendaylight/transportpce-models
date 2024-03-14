@@ -41,6 +41,30 @@
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a121d032_0efd6e09",
+        "filename": "features/odl-openconfig-models/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 7085
+      },
+      "writtenOn": "2024-03-14T13:31:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3016296f_5f15ec7a",
+      "range": {
+        "startLine": 15,
+        "startChar": 13,
+        "endLine": 15,
+        "endChar": 19
+      },
+      "revId": "dda968e3dc5eb65bc6172facbc97bfca755d9b91",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f7b55c71_65ec1967",
@@ -54,6 +78,30 @@
       "writtenOn": "2024-03-13T13:15:36Z",
       "side": 1,
       "message": "should be 12.0.4",
+      "range": {
+        "startLine": 37,
+        "startChar": 17,
+        "endLine": 37,
+        "endChar": 23
+      },
+      "revId": "dda968e3dc5eb65bc6172facbc97bfca755d9b91",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e61927c1_f744f285",
+        "filename": "features/odl-openconfig-models/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 7085
+      },
+      "writtenOn": "2024-03-14T13:31:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f7b55c71_65ec1967",
       "range": {
         "startLine": 37,
         "startChar": 17,
@@ -87,6 +135,30 @@
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "87751eb8_55deccc7",
+        "filename": "openconfig/openconfig-240119/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 7085
+      },
+      "writtenOn": "2024-03-14T13:31:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c3f4cb71_2d4f9b8d",
+      "range": {
+        "startLine": 15,
+        "startChar": 13,
+        "endLine": 15,
+        "endChar": 19
+      },
+      "revId": "dda968e3dc5eb65bc6172facbc97bfca755d9b91",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "94a70583_a2ba7809",
@@ -100,6 +172,30 @@
       "writtenOn": "2024-03-13T13:15:36Z",
       "side": 1,
       "message": "13.0.10",
+      "range": {
+        "startLine": 15,
+        "startChar": 14,
+        "endLine": 15,
+        "endChar": 19
+      },
+      "revId": "dda968e3dc5eb65bc6172facbc97bfca755d9b91",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b1857602_7fdbea75",
+        "filename": "openconfig/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 7085
+      },
+      "writtenOn": "2024-03-14T13:31:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "94a70583_a2ba7809",
       "range": {
         "startLine": 15,
         "startChar": 14,

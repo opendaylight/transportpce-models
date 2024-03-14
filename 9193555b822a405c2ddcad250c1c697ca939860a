@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "27671b7c_1b9ef5ca",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7085
+      },
+      "writtenOn": "2024-03-14T13:31:53Z",
+      "side": 1,
+      "message": "True, Thank you Gilles, I had forgotten it !",
+      "revId": "9193555b822a405c2ddcad250c1c697ca939860a",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    }
+  ]
+}
