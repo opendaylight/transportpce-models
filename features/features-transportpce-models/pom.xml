@@ -49,12 +49,6 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
     </dependency>
     <dependency>
       <groupId>${project.groupId}</groupId>
-      <artifactId>odl-tapi-2.1.1-models</artifactId>
-      <classifier>features</classifier>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>${project.groupId}</groupId>
       <artifactId>odl-tapi-2.4.0-models</artifactId>
       <classifier>features</classifier>
       <type>xml</type>
