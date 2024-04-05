@@ -47,13 +47,6 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
       </dependency>
       <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>odl-tapi-2.1.1-models</artifactId>
-        <version>${project.version}</version>
-        <type>xml</type>
-        <classifier>features</classifier>
-      </dependency>
-      <dependency>
-        <groupId>${project.groupId}</groupId>
         <artifactId>odl-tapi-2.4.0-models</artifactId>
         <version>${project.version}</version>
         <type>xml</type>
@@ -116,11 +109,6 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>openroadm-service-13.1.0</artifactId>
-        <version>${project.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>${project.groupId}</groupId>
-        <artifactId>tapi-2.1.1</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
