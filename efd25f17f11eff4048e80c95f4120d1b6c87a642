@@ -1,0 +1,8 @@
+Verified+1: jenkins-releng ODL
+Verified+1: ODL Required.GHA <releng+odl.required.gha@linuxfoundation.org>
+Code-Review+2: Gilles Thouenon <gilles.thouenon@orange.com>
+Submitted-by: Gilles Thouenon <gilles.thouenon@orange.com>
+Submitted-at: Sat, 06 Apr 2024 12:32:13 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/c/transportpce/models/+/111307
+Project: transportpce/models
+Branch: refs/heads/stable/potassium
