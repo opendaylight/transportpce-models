@@ -1,0 +1,8 @@
+Code-Review+2: Gilles Thouenon <gilles.thouenon@orange.com>
+Verified+1: jenkins-releng ODL
+Verified+1: ODL Required.GHA <releng+odl.required.gha@linuxfoundation.org>
+Submitted-by: Gilles Thouenon <gilles.thouenon@orange.com>
+Submitted-at: Sun, 09 Jun 2024 18:31:04 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/c/transportpce/models/+/112048
+Project: transportpce/models
+Branch: refs/heads/stable/calcium
