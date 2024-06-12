@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b8c384cc_202d77ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7446
+      },
+      "writtenOn": "2024-06-12T10:26:04Z",
+      "side": 1,
+      "message": "I need a supercommiter review to merge this change since the branch is locked.",
+      "revId": "32bdd3bde4281c8fe2972028c3e6136ef86b97da",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    }
+  ]
+}
