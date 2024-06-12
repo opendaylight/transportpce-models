@@ -16,6 +16,23 @@
       "message": "I need a supercommiter review to merge this change since the branch is locked.",
       "revId": "32bdd3bde4281c8fe2972028c3e6136ef86b97da",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ce9766d9_e9110929",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7446
+      },
+      "writtenOn": "2024-06-12T14:25:42Z",
+      "side": 1,
+      "message": "stage-release",
+      "revId": "32bdd3bde4281c8fe2972028c3e6136ef86b97da",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
     }
   ],
   "submitRequirementResults": [
