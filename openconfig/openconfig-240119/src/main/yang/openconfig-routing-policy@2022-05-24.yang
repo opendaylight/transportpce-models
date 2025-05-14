@@ -8,6 +8,7 @@ module openconfig-routing-policy {
   }
   import openconfig-interfaces {
     prefix oc-if;
+   revision-date 2021-04-06;
   }
   import openconfig-policy-types {
     prefix oc-pol-types;

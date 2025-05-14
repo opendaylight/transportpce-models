@@ -11,6 +11,7 @@ module openconfig-segment-routing {
   }
   import openconfig-interfaces {
     prefix oc-if;
+   revision-date 2021-04-06;
   }
   import ietf-inet-types {
     prefix inet;

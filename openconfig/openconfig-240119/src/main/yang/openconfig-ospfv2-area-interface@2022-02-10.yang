@@ -7,7 +7,7 @@ submodule openconfig-ospfv2-area-interface {
   import ietf-yang-types { prefix "yang"; }
   import openconfig-extensions { prefix "oc-ext"; }
   import openconfig-types { prefix "oc-types"; }
-  import openconfig-interfaces { prefix "oc-if"; }
+  import openconfig-interfaces { prefix oc-if; revision-date 2021-04-06; }
   import openconfig-ospf-types { prefix "oc-ospf-types"; }
   import openconfig-bfd { prefix "oc-bfd"; }
 

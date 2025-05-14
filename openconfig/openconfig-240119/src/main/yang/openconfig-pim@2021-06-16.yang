@@ -8,6 +8,7 @@ module openconfig-pim {
   }
   import openconfig-interfaces {
     prefix oc-if;
+   revision-date 2021-04-06;
   }
   import openconfig-acl {
     prefix oc-acl;

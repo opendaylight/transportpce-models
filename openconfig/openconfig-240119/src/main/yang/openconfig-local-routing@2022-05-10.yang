@@ -14,6 +14,7 @@ module openconfig-local-routing {
   }
   import openconfig-interfaces {
     prefix oc-if;
+   revision-date 2021-04-06;
   }
   import openconfig-bfd {
     prefix oc-bfd;

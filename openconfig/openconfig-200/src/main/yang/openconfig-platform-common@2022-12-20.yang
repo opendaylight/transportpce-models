@@ -1,11 +1,11 @@
 module openconfig-platform-common {
 
-  yang-version "1";
+yang-version "1";
 
-  // namespace
-  namespace "http://openconfig.net/yang/platform/common";
+    // namespace
+    namespace "http://openconfig.net/yang/platform/common";
 
-  prefix "oc-common";
+    prefix "oc-common";
 
   import openconfig-platform-types { prefix oc-platform-types; }
   import openconfig-extensions { prefix oc-ext; }
@@ -21,7 +21,13 @@ module openconfig-platform-common {
     "This modules contains common groupings that are used in multiple
     components within the platform module.";
 
-  oc-ext:openconfig-version "0.21.1";
+  oc-ext:openconfig-version "0.22.0";
+
+  revision "2022-12-20" {
+    description
+      "Add threshold and threshold-exceeded for resource usage.";
+    reference "0.22.0";
+  }
 
   revision "2022-12-19" {
     description
@@ -129,6 +135,20 @@ module openconfig-platform-common {
       description
         "Resource name within the component.";
     }
+
+    leaf used-threshold-upper {
+      type oc-types:percentage;
+      description
+        "The used percentage value (used / (used + free) * 100) that
+        when crossed will set utilization-threshold-exceeded to 'true'.";
+    }
+
+    leaf used-threshold-upper-clear {
+      type oc-types:percentage;
+      description
+        "The used percentage value (used / (used + free) * 100) that when
+        crossed will set utilization-threshold-exceeded to 'false'.";
+    }
   }
 
   grouping platform-utilization-resource-state {
@@ -172,8 +192,17 @@ module openconfig-platform-common {
       type oc-types:timeticks64;
       description
         "The timestamp when the high-watermark was last updated. The value
-		  is the timestamp in nanoseconds relative to the Unix Epoch
-		  (Jan 1, 1970 00:00:00 UTC).";
+        is the timestamp in nanoseconds relative to the Unix Epoch
+        (Jan 1, 1970 00:00:00 UTC).";
+    }
+
+    leaf used-threshold-upper-exceeded {
+      type boolean;
+      description
+        "This value is set to true when the used percentage value
+        (used / (used + free) * 100) has crossed the used-threshold-upper for this
+        resource and false when the used percentage value has crossed the configured
+        used-threshold-upper-clear value for this resource.";
     }
   }
 

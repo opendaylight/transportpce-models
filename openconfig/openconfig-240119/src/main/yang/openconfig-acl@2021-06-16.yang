@@ -8,6 +8,7 @@ module openconfig-acl {
   }
   import openconfig-interfaces {
     prefix oc-if;
+   revision-date 2021-04-06;
   }
   import openconfig-yang-types {
     prefix oc-yang;

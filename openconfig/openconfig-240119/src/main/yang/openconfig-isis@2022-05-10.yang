@@ -23,6 +23,7 @@ module openconfig-isis {
   }
   import openconfig-interfaces {
     prefix oc-if;
+   revision-date 2021-04-06;
   }
   import openconfig-segment-routing {
     prefix oc-sr;

@@ -3,7 +3,7 @@ submodule openconfig-aft-common {
     prefix "oc-aft";
   }
 
-  import openconfig-interfaces { prefix "oc-if"; }
+  import openconfig-interfaces { prefix oc-if; revision-date 2021-04-06; }
   import openconfig-extensions { prefix "oc-ext"; }
   import openconfig-yang-types { prefix "oc-yang"; }
   import openconfig-inet-types { prefix "oc-inet"; }

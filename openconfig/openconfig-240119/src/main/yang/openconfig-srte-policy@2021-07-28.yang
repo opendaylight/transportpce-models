@@ -11,6 +11,7 @@ module openconfig-srte-policy {
   }
   import openconfig-interfaces {
     prefix oc-if;
+   revision-date 2021-04-06;
   }
   import openconfig-inet-types {
     prefix oc-inet;

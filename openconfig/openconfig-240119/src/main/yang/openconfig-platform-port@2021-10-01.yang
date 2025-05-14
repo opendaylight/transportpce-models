@@ -8,9 +8,11 @@ module openconfig-platform-port {
   }
   import openconfig-interfaces {
     prefix oc-if;
+   revision-date 2021-04-06;
   }
   import openconfig-if-ethernet {
     prefix oc-eth;
+    revision-date 2022-04-20;
   }
   import openconfig-extensions {
     prefix oc-ext;

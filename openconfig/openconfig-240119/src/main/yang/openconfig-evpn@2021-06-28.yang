@@ -19,6 +19,7 @@ module openconfig-evpn {
   }
   import openconfig-interfaces {
     prefix oc-if;
+   revision-date 2021-04-06;
   }
   import openconfig-bgp-types {
     prefix oc-bgp-types;

@@ -4,7 +4,7 @@ submodule openconfig-pf-interfaces {
   }
 
   import openconfig-extensions { prefix "oc-ext"; }
-  import openconfig-interfaces { prefix "oc-if"; }
+  import openconfig-interfaces { prefix oc-if; revision-date 2021-04-06; }
 
   include openconfig-pf-forwarding-policies;
 

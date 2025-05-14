@@ -20,6 +20,7 @@ module openconfig-mpls-rsvp {
   }
   import openconfig-interfaces {
     prefix oc-if;
+   revision-date 2021-04-06;
   }
 
   organization
