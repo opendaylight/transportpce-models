@@ -24,6 +24,7 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
 
   <modules>
     <module>openconfig-240119</module>
+     <module>openconfig-200</module>
   </modules>
 
   <build>
