@@ -126,6 +126,11 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
         <artifactId>openconfig-200</artifactId>
         <version>${project.version}</version>
       </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>openconfig-public-200</artifactId>
+        <version>${project.version}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 </project>
