@@ -1,0 +1,7 @@
+# Note on openconfig-ap-interfaces@2021-08-02.yang
+
+This file has been renamed to openconfig-ap-interfaces@2021-08-02.yang.txt to prevent it
+from being automatically compiled by yangtools.
+
+The original YANG model openconfig-ap-interfaces@2021-08-02.yang has been temporarily diasabled
+for compatibility reasons. This file will be updated once the compatibility issues are resolved.

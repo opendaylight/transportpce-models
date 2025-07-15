@@ -922,7 +922,7 @@ module openconfig-platform {
           "Operational state data for chassis components";
       }
 
-      uses oc-platform:platform-utilization-top;
+      uses platform-utilization-top;
     }
 
 // TODO(aashaikh): linecard container is already defined in
