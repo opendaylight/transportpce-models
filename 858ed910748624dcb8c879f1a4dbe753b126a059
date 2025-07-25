@@ -1,0 +1,8 @@
+Verified+1: ODL Required.GHA <releng+odl.required.gha@linuxfoundation.org>
+Verified+1: jenkins-releng ODL
+Code-Review+2: Gilles Thouenon <gilles.thouenon@orange.com>
+Submitted-by: Gilles Thouenon <gilles.thouenon@orange.com>
+Submitted-at: Fri, 25 Jul 2025 06:33:43 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/c/transportpce/models/+/117133
+Project: transportpce/models
+Branch: refs/heads/master
