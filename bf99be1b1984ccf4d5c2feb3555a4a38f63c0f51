@@ -16,6 +16,57 @@
       "message": "Assuming I did everything right",
       "revId": "bf99be1b1984ccf4d5c2feb3555a4a38f63c0f51",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0dda3399_74bc663f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7446
+      },
+      "writtenOn": "2025-08-07T07:09:19Z",
+      "side": 1,
+      "message": "Hello Bala,\nHere are two comments.\nAlso, shouldn\u0027t the 13.1.0 templates have been replaced with 13.1.1?",
+      "revId": "bf99be1b1984ccf4d5c2feb3555a4a38f63c0f51",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0969f274_b839edd4",
+        "filename": "openroadm/device-13.1.1/src/main/resources/NOTICE",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7446
+      },
+      "writtenOn": "2025-08-07T07:09:19Z",
+      "side": 1,
+      "message": "Why this file?",
+      "revId": "bf99be1b1984ccf4d5c2feb3555a4a38f63c0f51",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "74467d31_924c579f",
+        "filename": "openroadm/device-13.1.1/src/main/resources/openconfig.LICENSE",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7446
+      },
+      "writtenOn": "2025-08-07T07:09:19Z",
+      "side": 1,
+      "message": "Is this file really necessary?",
+      "revId": "bf99be1b1984ccf4d5c2feb3555a4a38f63c0f51",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
     }
   ],
   "submitRequirementResults": [
