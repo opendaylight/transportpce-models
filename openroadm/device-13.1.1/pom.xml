@@ -18,7 +18,7 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
 
   <groupId>org.opendaylight.transportpce.models</groupId>
   <artifactId>openroadm-device-13.1.1</artifactId>
-  <version>22.0.0-SNAPSHOT</version>
+  <version>22.1.0-SNAPSHOT</version>
   <packaging>bundle</packaging>
 
   <dependencies>
@@ -63,8 +63,8 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
           <instructions>
             <Include-Resource>{maven-resources},target/classes/LICENSE,META-INF/git.properties=-target/classes/META-INF/git.properties</Include-Resource>
             <_exportcontents>
-              org.opendaylight.yang.gen.v1.http.org.openroadm.device.rev230526.internal.link,
-              org.opendaylight.yang.gen.v1.http.org.openroadm.device.rev230526.internal.links,*
+              org.opendaylight.yang.gen.v1.http.org.openroadm.device.rev250110.internal.link,
+              org.opendaylight.yang.gen.v1.http.org.openroadm.device.rev250110.internal.links,*
             </_exportcontents>
           </instructions>
         </configuration>
