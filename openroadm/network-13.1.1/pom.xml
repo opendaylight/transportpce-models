@@ -17,7 +17,7 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
   </parent>
 
   <groupId>org.opendaylight.transportpce.models</groupId>
-  <artifactId>openroadm-device-13.1.1</artifactId>
+  <artifactId>openroadm-network-13.1.1</artifactId>
   <version>23.0.0-SNAPSHOT</version>
   <packaging>bundle</packaging>
 
@@ -32,8 +32,12 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
       <artifactId>yang-common</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opendaylight.mdsal.binding.model.iana</groupId>
-      <artifactId>iana-routing-types</artifactId>
+      <groupId>org.opendaylight.mdsal.binding.model.ietf</groupId>
+      <artifactId>rfc8345-ietf-network-topology</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.opendaylight.mdsal.binding.model.ietf</groupId>
+      <artifactId>rfc8345-ietf-network</artifactId>
     </dependency>
     <dependency>
       <groupId>org.opendaylight.mdsal.binding.model.ietf</groupId>
@@ -44,39 +48,8 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
       <artifactId>rfc6991-ietf-yang-types</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opendaylight.mdsal.binding.model.ietf</groupId>
-      <artifactId>rfc6241</artifactId>
-    </dependency>
-    <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
     </dependency>
   </dependencies>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.felix</groupId>
-        <artifactId>maven-bundle-plugin</artifactId>
-        <extensions>true</extensions>
-        <configuration>
-          <instructions>
-            <Include-Resource>{maven-resources},target/classes/LICENSE,META-INF/git.properties=-target/classes/META-INF/git.properties</Include-Resource>
-            <_exportcontents>
-              org.opendaylight.yang.gen.v1.http.org.openroadm.device.rev250110.internal.link,
-              org.opendaylight.yang.gen.v1.http.org.openroadm.device.rev250110.internal.links,*
-            </_exportcontents>
-          </instructions>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <configuration>
-          <sourcepath>/target/generated-sources/mdsal-binding/</sourcepath>
-          <excludePackageNames>*</excludePackageNames>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
 </project>
