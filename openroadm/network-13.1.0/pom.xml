@@ -18,7 +18,7 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
 
   <groupId>org.opendaylight.transportpce.models</groupId>
   <artifactId>openroadm-network-13.1.0</artifactId>
-  <version>21.3.0-SNAPSHOT</version>
+  <version>21.3.0</version>
   <packaging>bundle</packaging>
 
   <dependencies>
