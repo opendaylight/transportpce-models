@@ -33,4 +33,11 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
         <maven.deploy.skip>true</maven.deploy.skip>
         <maven.install.skip>true</maven.install.skip>
     </properties>
+
+    <scm>
+        <connection>scm:git:ssh://git.opendaylight.org:29418/transportpce/models.git</connection>
+        <developerConnection>scm:git:ssh://git.opendaylight.org:29418/transportpce/models.git</developerConnection>
+        <url>https://lf-opendaylight.atlassian.net/wiki/spaces/ODL/pages/12527182/TransportPCE</url>
+        <tag>HEAD</tag>
+    </scm>
 </project>

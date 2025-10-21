@@ -17,7 +17,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>org.opendaylight.models.model</groupId>
+    <groupId>org.opendaylight.transportpce.models</groupId>
     <artifactId>bundle-parent</artifactId>
     <version>23.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -40,8 +40,8 @@
     </dependencyManagement>
 
     <scm>
-        <connection>scm:git:ssh://git.opendaylight.org:29418/models.git</connection>
-        <developerConnection>scm:git:ssh://git.opendaylight.org:29418/models.git</developerConnection>
+        <connection>scm:git:ssh://git.opendaylight.org:29418/transportpce/models.git</connection>
+        <developerConnection>scm:git:ssh://git.opendaylight.org:29418/transportpce/models.git</developerConnection>
         <url>https://lf-opendaylight.atlassian.net/wiki/spaces/ODL/pages/12527182/TransportPCE</url>
         <tag>HEAD</tag>
     </scm>
