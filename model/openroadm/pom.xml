@@ -18,7 +18,7 @@
 
     <groupId>org.opendaylight.models</groupId>
     <artifactId>openroadm-aggregator</artifactId>
-    <version>23.0.0-SNAPSHOT</version>
+    <version>23.0.0</version>
     <name>OpenROADM models</name>
     <packaging>pom</packaging>
 

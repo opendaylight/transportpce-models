@@ -19,7 +19,7 @@
 
     <groupId>org.opendaylight.models</groupId>
     <artifactId>tapi-aggregator</artifactId>
-    <version>23.0.0-SNAPSHOT</version>
+    <version>23.0.0</version>
     <name>T-API models</name>
     <packaging>pom</packaging>
 

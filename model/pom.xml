@@ -19,7 +19,7 @@
 
     <groupId>org.opendaylight.transportpce.models</groupId>
     <artifactId>model-aggregator</artifactId>
-    <version>23.0.0-SNAPSHOT</version>
+    <version>23.0.0</version>
     <name>TransportPCE models</name>
     <packaging>pom</packaging>
 
