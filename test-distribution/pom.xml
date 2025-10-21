@@ -16,7 +16,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>org.opendaylight.transportpce.models</groupId>
+    <groupId>org.opendaylight.models.model</groupId>
     <artifactId>test-distribution</artifactId>
     <version>23.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -29,7 +29,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.opendaylight.transportpce.models</groupId>
+                <groupId>org.opendaylight.models.model</groupId>
                 <artifactId>transportpce-models-artifacts</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>

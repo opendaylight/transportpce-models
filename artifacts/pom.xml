@@ -16,7 +16,7 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
         <relativePath/>
     </parent>
 
-    <groupId>org.opendaylight.transportpce.models</groupId>
+    <groupId>org.opendaylight.models.model</groupId>
     <artifactId>transportpce-models-artifacts</artifactId>
     <version>23.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
