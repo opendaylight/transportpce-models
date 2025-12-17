@@ -5,12 +5,15 @@ module openconfig-transport-types {
 
   import openconfig-platform-types {
     prefix oc-platform-types;
+    revision-date 2022-03-27;
   }
   import openconfig-extensions {
     prefix oc-ext;
+    revision-date 2020-06-16;
   }
   import openconfig-types {
     prefix oc-types;
+    revision-date 2019-04-16;
   }
 
   organization

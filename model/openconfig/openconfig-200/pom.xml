@@ -16,10 +16,10 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
         <relativePath>../../bundle-parent/pom.xml</relativePath>
     </parent>
 
-    <artifactId>openconfig-240119</artifactId>
+    <artifactId>openconfig-200</artifactId>
     <packaging>bundle</packaging>
     <name>${project.artifactId}</name>
-    <description>OpenConfig in a pre-release revision</description>
+    <description>OpenConfig v2.0.0</description>
 
   <dependencies>
     <dependency>
