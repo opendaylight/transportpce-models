@@ -3,21 +3,17 @@ module openconfig-platform-port {
   namespace "http://openconfig.net/yang/platform/port";
   prefix oc-port;
 
-  import openconfig-platform {
+  import openconfig-platform { revision-date "2022-06-10";
     prefix oc-platform;
-    revision-date "2022-06-10";
   }
-  import openconfig-interfaces {
+  import openconfig-interfaces { revision-date "2022-06-10";
     prefix oc-if;
-    revision-date "2021-04-06";
   }
-  import openconfig-if-ethernet {
+  import openconfig-if-ethernet { revision-date "2022-06-10";
     prefix oc-eth;
-    revision-date "2022-04-20";
   }
-  import openconfig-extensions {
+  import openconfig-extensions { revision-date "2022-06-10";
     prefix oc-ext;
-    revision-date "2020-06-16";
   }
 
   organization
@@ -28,6 +24,12 @@ module openconfig-platform-port {
   description
     "This module defines data related to PORT components in the
      openconfig-platform model";
+
+  revision "2022-06-10" {
+    description
+      "Fix the tag revision";
+    reference "1.0.0";
+  }
 
   revision 2021-10-01 {
     description
@@ -85,7 +87,7 @@ module openconfig-platform-port {
       "0.1.0";
   }
 
-  oc-ext:openconfig-version "0.4.2";
+  oc-ext:openconfig-version "1.0.0";
   oc-ext:regexp-posix;
   oc-ext:catalog-organization "openconfig";
   oc-ext:origin "openconfig";

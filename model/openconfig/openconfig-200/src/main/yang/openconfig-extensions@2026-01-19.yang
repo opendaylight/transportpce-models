@@ -18,7 +18,13 @@ module openconfig-extensions {
     "This module provides extensions to the YANG language to allow
     OpenConfig specific functionality and meta-data to be defined.";
 
-  oc-ext:openconfig-version "0.5.1";
+  oc-ext:openconfig-version "2.0.0";
+
+  revision "2026-01-19" {
+    description
+      "Fix the tag revision";
+    reference "2.0.0";
+  }
 
   revision "2022-10-05" {
     description

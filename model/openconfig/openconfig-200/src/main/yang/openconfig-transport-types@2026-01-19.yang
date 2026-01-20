@@ -7,18 +7,9 @@ module openconfig-transport-types {
 
   prefix "oc-opt-types";
 
-  import openconfig-platform-types {
-    prefix oc-platform-types;
-    revision-date 2022-07-28;
-}
-  import openconfig-extensions {
-    prefix oc-ext;
-    revision-date 2022-10-05;
-}
-  import openconfig-types {
-    prefix oc-types;
-    revision-date 2019-04-16;
-}
+  import openconfig-platform-types { prefix oc-platform-types; revision-date 2026-01-19; }
+  import openconfig-extensions { prefix oc-ext; revision-date 2026-01-19; }
+  import openconfig-types { prefix oc-types; revision-date 2026-01-19; }
 
   // meta
   organization "OpenConfig working group";
@@ -31,7 +22,13 @@ module openconfig-transport-types {
     "This module contains general type definitions and identities
     for optical transport models.";
 
-  oc-ext:openconfig-version "0.18.1";
+  oc-ext:openconfig-version "2.0.0";
+
+  revision "2026-01-19" {
+    description
+      "Fix the tag revision";
+    reference "2.0.0";
+  }
 
   revision "2023-02-08" {
     description

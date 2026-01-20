@@ -3,9 +3,8 @@ module openconfig-alarm-types {
   namespace "http://openconfig.net/yang/alarms/types";
   prefix oc-alarm-types;
 
-  import openconfig-extensions {
+  import openconfig-extensions { revision-date "2022-06-10";
     prefix oc-ext;
-    revision-date 2020-06-16;
   }
 
   organization
@@ -35,6 +34,12 @@ module openconfig-alarm-types {
      Section 4.c of the IETF Trust's Legal Provisions Relating
      to IETF Documents (http://trustee.ietf.org/license-info).";
 
+  revision "2022-06-10" {
+    description
+      "Fix the tag revision";
+    reference "1.0.0";
+  }
+
   revision 2018-11-21 {
     description
       "Add OpenConfig module metadata extensions.";
@@ -48,7 +53,7 @@ module openconfig-alarm-types {
       "0.2.0";
   }
 
-  oc-ext:openconfig-version "0.2.1";
+  oc-ext:openconfig-version "1.0.0";
   oc-ext:regexp-posix;
   oc-ext:catalog-organization "openconfig";
   oc-ext:origin "openconfig";
