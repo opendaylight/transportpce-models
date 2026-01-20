@@ -8,22 +8,10 @@ module openconfig-platform-port {
   prefix "oc-port";
 
   // import some basic types
-  import openconfig-platform {
-    prefix oc-platform;
-    revision-date "2022-12-20";
-}
-  import openconfig-interfaces {
-    prefix oc-if;
-    revision-date "2022-10-25";
-}
-  import openconfig-if-ethernet {
-    prefix oc-eth;
-    revision-date "2023-03-10";
-}
-  import openconfig-extensions {
-    prefix oc-ext;
-    revision-date "2022-10-05";
-}
+  import openconfig-platform { prefix oc-platform; revision-date 2026-01-19; }
+  import openconfig-interfaces { prefix oc-if; revision-date 2026-01-19; }
+  import openconfig-if-ethernet { prefix oc-eth; revision-date 2026-01-19; }
+  import openconfig-extensions { prefix oc-ext; revision-date 2026-01-19; }
 
   // meta
   organization "OpenConfig working group";
@@ -36,7 +24,13 @@ module openconfig-platform-port {
     "This module defines data related to PORT components in the
     openconfig-platform model";
 
-  oc-ext:openconfig-version "1.0.0";
+  oc-ext:openconfig-version "2.0.0";
+
+  revision "2026-01-19" {
+    description
+      "Fix the tag revision";
+    reference "2.0.0";
+  }
 
   revision "2023-01-19" {
     description

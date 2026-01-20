@@ -6,37 +6,29 @@ module openconfig-platform-transceiver {
   import ietf-yang-types {
     prefix yang;
   }
-  import openconfig-platform {
+  import openconfig-platform { revision-date "2022-06-10";
     prefix oc-platform;
-    revision-date 2022-06-10;
   }
-  import openconfig-platform-types {
+  import openconfig-platform-types { revision-date "2022-06-10";
     prefix oc-platform-types;
-    revision-date 2022-03-27;
   }
-  import openconfig-platform-port {
+  import openconfig-platform-port { revision-date "2022-06-10";
     prefix oc-port;
-    revision-date 2021-10-01;
   }
-  import openconfig-interfaces {
+  import openconfig-interfaces { revision-date "2022-06-10";
     prefix oc-if;
-    revision-date 2021-04-06;
   }
-  import openconfig-transport-types {
+  import openconfig-transport-types { revision-date "2022-06-10";
     prefix oc-opt-types;
-    revision-date 2021-07-29;
   }
-  import openconfig-types {
+  import openconfig-types { revision-date "2022-06-10";
     prefix oc-types;
-    revision-date 2019-04-16;
   }
-  import openconfig-extensions {
+  import openconfig-extensions { revision-date "2022-06-10";
     prefix oc-ext;
-    revision-date 2020-06-16;
   }
-  import openconfig-yang-types {
+  import openconfig-yang-types { revision-date "2022-06-10";
     prefix oc-yang;
-    revision-date 2021-07-14;
   }
 
   organization
@@ -82,6 +74,12 @@ module openconfig-platform-transceiver {
       device, then it will use the logical-channel ingress leaf to
       specify a physical-channel within a TRANSCEIVER component
       (i.e. gray optic) that it is associated with.";
+
+  revision "2022-06-10" {
+    description
+      "Fix the tag revision";
+    reference "1.0.0";
+  }
 
   revision 2021-07-29 {
     description
@@ -154,7 +152,7 @@ module openconfig-platform-transceiver {
       "0.2.0";
   }
 
-  oc-ext:openconfig-version "0.9.0";
+  oc-ext:openconfig-version "1.0.0";
   oc-ext:regexp-posix;
   oc-ext:catalog-organization "openconfig";
   oc-ext:origin "openconfig";

@@ -9,23 +9,23 @@ module openconfig-platform {
 
   import openconfig-platform-types {
     prefix oc-platform-types;
-    revision-date "2022-07-28";
+    revision-date "2026-01-19";
 }
   import openconfig-extensions {
     prefix oc-ext;
-    revision-date "2022-10-05";
+    revision-date "2026-01-19";
 }
   import openconfig-alarm-types {
     prefix oc-alarm-types;
-    revision-date "2018-11-21";
+    revision-date "2026-01-19";
 }
   import openconfig-yang-types {
     prefix oc-yang;
-    revision-date "2021-07-14";
+    revision-date "2026-01-19";
 }
   import openconfig-types {
     prefix oc-types;
-    revision-date "2019-04-16";
+    revision-date "2026-01-19";
 }
 
   // meta
@@ -80,6 +80,11 @@ module openconfig-platform {
 
   oc-ext:openconfig-version "0.22.0";
 
+  revision "2026-01-19" {
+    description
+      "Fix the tag revision";
+    reference "2.0.0";
+  }
   revision "2022-12-20" {
      description
         "Add threshold and threshold-exceeded for resource usage.";

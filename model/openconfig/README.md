@@ -14,7 +14,10 @@ YANG files included here should always come from the above OpenConfig github rep
 Model currently packaged are:
 
 - [pre-release 2.0](openconfig-240119)
+- [release v2.0.0](openconfig-200)
 
-Next version of models that should be integrated at short term is:
-
-- [release v2.0.0]()
+Although the openconfig models come from the Openconfig GitHub repository, the following adaptations are necessary: 
+- use only models necessary for openconfig port-mapping and renderer in TransportPCE project.
+- add a common release 2022-06-10 for [pre-release 2.0] and 2026-01-19 for [release v2.0.0] to be able to run
+simultaneously both releases.
+- add openconfig-platform-common directly inside openconfig-platform.yang models

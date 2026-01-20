@@ -8,19 +8,10 @@ module openconfig-if-ethernet {
   prefix "oc-eth";
 
   // import some basic types
-  import openconfig-interfaces {
-    prefix oc-if;
-    revision-date "2022-10-25";
-}
+  import openconfig-interfaces { prefix oc-if; revision-date 2026-01-19; }
   import iana-if-type { prefix ianaift; }
-  import openconfig-yang-types {
-    prefix oc-yang;
-    revision-date "2021-07-14";
-}
-  import openconfig-extensions {
-    prefix oc-ext;
-    revision-date "2022-10-05";
-}
+  import openconfig-yang-types { prefix oc-yang; revision-date 2026-01-19; }
+  import openconfig-extensions { prefix oc-ext; revision-date 2026-01-19; }
 
   // meta
   organization "OpenConfig working group";
@@ -33,7 +24,13 @@ module openconfig-if-ethernet {
     "Model for managing Ethernet interfaces -- augments the OpenConfig
     model for interface configuration and state.";
 
-  oc-ext:openconfig-version "2.13.0";
+  oc-ext:openconfig-version "2.0.0";
+
+  revision "2026-01-19" {
+    description
+      "Fix the tag revision";
+    reference "2.0.0";
+  }
 
   revision "2023-03-10" {
     description
