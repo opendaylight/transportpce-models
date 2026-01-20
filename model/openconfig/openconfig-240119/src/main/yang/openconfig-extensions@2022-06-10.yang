@@ -12,6 +12,12 @@ module openconfig-extensions {
     "This module provides extensions to the YANG language to allow
      OpenConfig specific functionality and meta-data to be defined.";
 
+  revision "2022-06-10" {
+    description
+      "Fix the tag revision";
+    reference "1.0.0";
+  }
+
   revision 2020-06-16 {
     description
       "Add extension for POSIX pattern statements.";

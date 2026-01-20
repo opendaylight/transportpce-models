@@ -7,19 +7,10 @@ module openconfig-lldp {
 
   prefix "oc-lldp";
 
-  import openconfig-lldp-types {
-    prefix oc-lldp-types;
-    revision-date "2018-11-21";
-}
-  import openconfig-interfaces {
-    prefix oc-if;
-    revision-date "2022-10-25";
-}
+  import openconfig-lldp-types { prefix oc-lldp-types; revision-date 2026-01-19; }
+  import openconfig-interfaces { prefix oc-if; revision-date 2026-01-19; }
   import ietf-yang-types { prefix yang; }
-  import openconfig-extensions {
-    prefix oc-ext;
-    revision-date "2022-10-05";
-}
+  import openconfig-extensions { prefix oc-ext; revision-date 2026-01-19; }
 
 
   // meta
@@ -33,7 +24,13 @@ module openconfig-lldp {
     "This module defines configuration and operational state data
     for the LLDP protocol.";
 
-  oc-ext:openconfig-version "0.2.1";
+  oc-ext:openconfig-version "2.0.0";
+
+  revision "2026-01-19" {
+    description
+      "Fix the tag revision";
+    reference "2.0.0";
+  }
 
   revision "2018-11-21" {
     description

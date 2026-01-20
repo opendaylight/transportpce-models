@@ -7,43 +7,16 @@ module openconfig-terminal-device {
 
   prefix "oc-opt-term";
 
-  import openconfig-types {
-    prefix oc-types;
-    revision-date 2019-04-16;
-}
-  import openconfig-transport-types {
-    prefix oc-opt-types;
-    revision-date 2023-02-08;
-}
-  import openconfig-if-ethernet {
-    prefix oc-eth;
-    revision-date 2023-03-10;
-}
-  import openconfig-interfaces {
-    prefix oc-if;
-    revision-date 2022-10-25;
-}
-  import openconfig-platform {
-    prefix oc-platform;
-    revision-date 2022-12-20;
-}
-  import openconfig-platform-transceiver {
-    prefix oc-transceiver;
-    revision-date 2023-02-10;
-}
-  import openconfig-lldp {
-    prefix oc-lldp;
-    revision-date 2018-11-21;
-}
-  import openconfig-extensions {
-    prefix oc-ext;
-    revision-date 2022-10-05;
-}
+  import openconfig-types { prefix oc-types; revision-date 2026-01-19; }
+  import openconfig-transport-types { prefix oc-opt-types; revision-date 2026-01-19; }
+  import openconfig-if-ethernet { prefix oc-eth; revision-date 2026-01-19; }
+  import openconfig-interfaces { prefix oc-if; revision-date 2026-01-19; }
+  import openconfig-platform { prefix oc-platform; revision-date 2026-01-19; }
+  import openconfig-platform-transceiver { prefix oc-transceiver; revision-date 2026-01-19; }
+  import openconfig-lldp { prefix oc-lldp; revision-date 2026-01-19; }
+  import openconfig-extensions { prefix oc-ext; revision-date 2026-01-19; }
   import ietf-yang-types { prefix yang; }
-  import openconfig-yang-types {
-    prefix oc-yang;
-    revision-date 2021-07-14;
-}
+  import openconfig-yang-types { prefix oc-yang; revision-date 2026-01-19; }
 
 
   // meta
@@ -104,7 +77,13 @@ module openconfig-terminal-device {
     ports per linecard, separate linecards for client and line ports,
     etc.).";
 
-  oc-ext:openconfig-version "1.9.0";
+  oc-ext:openconfig-version "2.0.0";
+
+  revision "2026-01-19" {
+    description
+      "Fix the tag revision";
+    reference "2.0.0";
+  }
 
   revision "2021-07-29" {
     description
