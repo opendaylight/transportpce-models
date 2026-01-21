@@ -16,6 +16,24 @@
       "message": "Hi Christophe,\n\nThank you for preparing this change.\nOne question: shall we include openconfig-terminal-device-properties yang also for 2.0.0?  We do not use it now, but we could use it later to discover details of operational-modes and transceiver capabilities.",
       "revId": "323c32ee1ae5d433fa25c21530fcd9eaa67d6a58",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "45aca278_c16ff479",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7085
+      },
+      "writtenOn": "2026-01-21T08:49:59Z",
+      "side": 1,
+      "message": "Hi Roshan,\nI understand your point. I therefore suggest adding it for 2.0.0 even though we don\u0027t currently need it.",
+      "parentUuid": "1167d137_ea9b881e",
+      "revId": "323c32ee1ae5d433fa25c21530fcd9eaa67d6a58",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
     }
   ]
 }
