@@ -1,0 +1,8 @@
+Verified+1: jenkins-releng ODL
+Code-Review+2: Christophe BETOULE <christophe.betoule@orange.com>
+Verified+1: ODL Required.GHA <releng+odl.required.gha@linuxfoundation.org>
+Submitted-by: Christophe BETOULE <christophe.betoule@orange.com>
+Submitted-at: Thu, 29 Jan 2026 13:43:21 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/c/transportpce/models/+/120293
+Project: transportpce/models
+Branch: refs/heads/stable/titanium
