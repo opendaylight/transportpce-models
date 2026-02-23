@@ -29,5 +29,6 @@
 
     <modules>
         <module>openconfig-240119</module>
+        <module>openconfig-200</module>
     </modules>
 </project>
