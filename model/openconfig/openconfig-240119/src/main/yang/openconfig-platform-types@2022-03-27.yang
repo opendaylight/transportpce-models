@@ -5,9 +5,11 @@ module openconfig-platform-types {
 
   import openconfig-types {
     prefix oc-types;
+    revision-date 2019-04-16;
   }
   import openconfig-extensions {
     prefix oc-ext;
+    revision-date 2020-06-16;
   }
 
   organization

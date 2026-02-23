@@ -5,15 +5,18 @@ module openconfig-lldp {
 
   import openconfig-lldp-types {
     prefix oc-lldp-types;
+    revision-date 2018-11-21;
   }
   import openconfig-interfaces {
     prefix oc-if;
+    revision-date 2021-04-06;
   }
   import ietf-yang-types {
     prefix yang;
   }
   import openconfig-extensions {
     prefix oc-ext;
+    revision-date 2020-06-16;
   }
 
   organization

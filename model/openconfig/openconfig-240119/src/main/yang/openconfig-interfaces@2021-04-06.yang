@@ -8,12 +8,15 @@ module openconfig-interfaces {
   }
   import openconfig-yang-types {
     prefix oc-yang;
+    revision-date 2021-07-14;
   }
   import openconfig-types {
     prefix oc-types;
+    revision-date 2019-04-16;
   }
   import openconfig-extensions {
     prefix oc-ext;
+    revision-date 2020-06-16;
   }
 
   organization

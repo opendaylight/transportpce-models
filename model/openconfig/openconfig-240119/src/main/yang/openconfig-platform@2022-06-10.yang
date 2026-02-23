@@ -5,22 +5,24 @@ module openconfig-platform {
 
   import openconfig-platform-types {
     prefix oc-platform-types;
+    revision-date 2022-03-27;
   }
   import openconfig-extensions {
     prefix oc-ext;
+    revision-date 2020-06-16;
   }
   import openconfig-alarm-types {
     prefix oc-alarm-types;
+    revision-date 2018-11-21;
   }
   import openconfig-yang-types {
     prefix oc-yang;
+    revision-date 2021-07-14;
   }
   import openconfig-types {
     prefix oc-types;
+    revision-date 2019-04-16;
   }
-
-
-  include "openconfig-platform-common";
 
   organization
     "OpenConfig working group";
@@ -925,4 +927,136 @@ module openconfig-platform {
   }
 
   uses platform-component-top;
+
+// extension statements
+
+// feature statements
+
+// identity statements
+
+// typedef statements
+
+// grouping statements
+
+    grouping platform-utilization-top {
+        description
+            "Top level of utilization.";
+
+        container utilization {
+            description
+                "Utilization of the component.";
+
+            container resources {
+                description
+                    "Enclosing container for the resources in this component.";
+
+                list resource {
+                    key "name";
+                    description
+                        "List of resources, keyed by resource name.";
+
+                    leaf name {
+                        type leafref {
+                            path "../config/name";
+                        }
+                        description
+                            "References the resource name.";
+                    }
+
+                    container config {
+                        description
+                            "Configuration data for each resource.";
+
+                        uses platform-utilization-resource-config;
+                    }
+
+                    container state {
+                        config false;
+                        description
+                            "Operational state data for each resource.";
+
+                        uses platform-utilization-resource-config;
+                        uses platform-utilization-resource-state;
+                    }
+                }
+            }
+        }
+    }
+
+    grouping platform-utilization-resource-config {
+        description
+            "Configuration data for utilization resource.";
+
+        leaf name {
+            type string;
+            description
+                "Resource name within the component.";
+        }
+    }
+
+    grouping platform-utilization-resource-state {
+        description
+            "Operational state data for utilization resource.";
+
+        leaf used {
+            type uint64;
+            description
+                "Number of entries currently in use for the resource.";
+        }
+
+        leaf committed {
+            type uint64;
+            description
+                "Number of entries currently reserved for this resource. This is only
+                relevant to tables which allocate a block of resource for a given
+                feature.";
+        }
+
+        leaf free {
+            type uint64;
+            description
+                "Number of entries available to use.";
+        }
+
+        leaf max-limit {
+            type uint64;
+            description
+                "Maximum number of entries available for the resource. The value
+                is the theoretical maximum resource utilization possible.";
+        }
+
+        leaf high-watermark {
+            type uint64;
+            description
+                "A watermark of highest number of entries used for this resource.";
+        }
+
+        leaf last-high-watermark {
+            type oc-types:timeticks64;
+            description
+                "The timestamp when the high-watermark was last updated. The value
+                is the timestamp in nanoseconds relative to the Unix Epoch
+                (Jan 1, 1970 00:00:00 UTC).";
+        }
+    }
+
+    grouping component-power-management {
+        description
+            "Common grouping for managing component power";
+
+        leaf power-admin-state {
+            type oc-platform-types:component-power-type;
+            default POWER_ENABLED;
+            description
+                "Enable or disable power to the component";
+        }
+    }
+
+    // data definition statements
+
+    // augment statements
+
+    // rpc statements
+
+    // notification statements
 }

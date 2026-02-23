@@ -5,6 +5,7 @@ module openconfig-alarm-types {
 
   import openconfig-extensions {
     prefix oc-ext;
+    revision-date 2020-06-16;
   }
 
   organization
