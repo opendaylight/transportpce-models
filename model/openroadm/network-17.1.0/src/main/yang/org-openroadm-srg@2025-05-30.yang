@@ -1,0 +1,357 @@
+module org-openroadm-srg {
+  yang-version 1.1;
+  namespace "http://org/openroadm/srg";
+  prefix srg;
+
+  import org-openroadm-common-optical-channel-types {
+    prefix org-openroadm-common-optical-channel-types;
+    revision-date 2025-03-28;
+  }
+  import ietf-network {
+    prefix nd;
+    revision-date 2018-02-26;
+  }
+  import ietf-network-topology {
+    prefix nwt;
+    revision-date 2018-02-26;
+  }
+  import org-openroadm-common-link-types {
+    prefix org-openroadm-common-link-types;
+    revision-date 2024-12-13;
+  }
+  import org-openroadm-common-state-types {
+    prefix org-openroadm-common-state-types;
+    revision-date 2019-11-29;
+  }
+  import org-openroadm-equipment-states-types {
+    prefix org-openroadm-equipment-states-types;
+    revision-date 2019-11-29;
+  }
+  import org-openroadm-common-types {
+    prefix org-openroadm-common-types;
+    revision-date 2025-05-30;
+  }
+
+  organization
+    "OPEN ROADM MSA";
+  contact
+    "OpenROADM.org.";
+  description
+    "YANG definitions for an Add/Drop group in Network Model
+
+     Copyright of the Members of the Open ROADM MSA Agreement dated (c) 2016,
+     All other rights reserved.
+
+     Redistribution and use in source and binary forms, with or without modification,
+     are permitted provided that the following conditions are met:
+
+     * Redistributions of source code must retain the above copyright notice, this
+       list of conditions and the following disclaimer.
+     * Redistributions in binary form must reproduce the above copyright notice,
+       this list of conditions and the following disclaimer in the documentation and/or
+       other materials provided with the distribution.
+     * Neither the Members of the Open ROADM MSA Agreement nor the names of its
+       contributors may be used to endorse or promote products derived from this software
+       without specific prior written permission.
+
+     THIS SOFTWARE IS PROVIDED BY THE MEMBERS OF THE OPEN ROADM MSA  AGREEMENT ''AS IS''
+     AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+     IN NO EVENT THE MEMBERS OF THE OPEN ROADM MSA  AGREEMENT BE LIABLE FOR ANY DIRECT,
+     INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+     NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;  LOSS OF USE, DATA,
+     OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+     WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+     ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+     POSSIBILITY OF SUCH DAMAGE.";
+
+  revision 2025-05-30 {
+    description
+      "Version 17.1.0";
+  }
+  revision 2025-03-28 {
+    description
+      "Version 17.0";
+  }
+  revision 2024-12-13 {
+    description
+      "Version 16.1";
+  }
+  revision 2024-09-27 {
+    description
+      "Version 16.0";
+  }
+  revision 2023-05-26 {
+    description
+      "Version 13.1";
+  }
+  revision 2021-12-10 {
+    description
+      "Version 10.1";
+  }
+  revision 2021-09-24 {
+    description
+      "Version 10.0";
+  }
+  revision 2021-03-26 {
+    description
+      "Version 9.0";
+  }
+  revision 2020-05-29 {
+    description
+      "Version 7.1.0";
+  }
+  revision 2020-03-27 {
+    description
+      "Version 7.0.0";
+  }
+  revision 2019-11-29 {
+    description
+      "Version 6.1.0";
+  }
+  revision 2019-09-27 {
+    description
+      "Version 6.0.0";
+  }
+  revision 2019-03-29 {
+    description
+      "Version 5.0.0";
+  }
+  revision 2018-11-30 {
+    description
+      "Version 4.1.0";
+  }
+  revision 2018-09-28 {
+    description
+      "Version 4.0.0";
+  }
+  revision 2018-05-30 {
+    description
+      "Version 3.1.0";
+  }
+  revision 2018-03-30 {
+    description
+      "Version 3.0.0";
+  }
+  revision 2017-12-15 {
+    description
+      "Version 2.2";
+  }
+  revision 2017-09-29 {
+    description
+      "Version 2.1";
+  }
+  revision 2017-07-28 {
+    description
+      "Version 2.0.1 - added revision-date to imports";
+  }
+  revision 2017-06-26 {
+    description
+      "Version 2.0";
+  }
+  revision 2016-10-14 {
+    description
+      "Version 1.2";
+  }
+
+  grouping srg-node-attributes {
+    leaf srg-number {
+      type uint16;
+    }
+    leaf max-pp {
+      type uint32;
+      description
+        "Maximum number of add/drop port pairs in an SRG";
+    }
+    leaf current-provisioned-pp {
+      type uint32;
+      description
+        "current provisioned number of port pair in a given SRG";
+    }
+    leaf wavelength-duplication {
+      type org-openroadm-common-optical-channel-types:wavelength-duplication-type;
+    }
+    leaf-list supported-operational-modes {
+      type string;
+      config true;
+      description
+        "defines the supported openroadm specifications";
+    }
+    uses srg-constraints;
+  }
+
+  grouping srg-constraints {
+    uses constraints-grp;
+    uses capabilities;
+    uses mc-profiles;
+    list subgroup {
+      key "subgroup-id";
+      description
+        "The list of SRG subgroups that make up the SRG";
+      leaf subgroup-id {
+        type uint16;
+        description
+          "The identifier for the SRG subgroup within the SRG";
+      }
+      leaf lifecycle-state {
+        type org-openroadm-common-state-types:lifecycle-state;
+        description
+          "Lifecycle State of subgroup. Whether it is planned, deployed, in maintenance, etc.";
+      }
+      leaf operational-state {
+        type org-openroadm-common-state-types:state;
+      }
+      leaf administrative-state {
+        type org-openroadm-equipment-states-types:admin-states;
+      }
+      uses constraints-grp;
+      uses capabilities;
+      uses mc-profiles;
+      leaf-list tp-list {
+        type leafref {
+          path "/nd:networks/nd:network/nd:node[nd:node-id=current()/../../../nd:node-id]/nwt:termination-point/nwt:tp-id";
+        }
+        description
+          "The list of termination-point refs associated with the SRG subgroup";
+      }
+    }
+  }
+
+  grouping constraints-grp {
+    container constraints {
+      leaf min-slot-width {
+        type org-openroadm-common-optical-channel-types:frequency-GHz;
+        description
+          "The minimum slot width in frequency-GHz";
+      }
+      leaf max-slot-width {
+        type org-openroadm-common-optical-channel-types:frequency-GHz;
+        description
+          "The maximum slot width in frequency-GHz";
+      }
+      leaf min-input-psd {
+        type org-openroadm-common-link-types:psd-dBm-50GHz;
+        description
+          "The minimum input PSD for a channel into the SRG/sub-SRG";
+      }
+      leaf max-input-psd {
+        type org-openroadm-common-link-types:psd-dBm-50GHz;
+        description
+          "The maximum input PSD for a channel into the SRG/sub-SRG";
+      }
+      leaf target-input-psd {
+        type org-openroadm-common-link-types:psd-dBm-50GHz;
+        description
+          "The provisioned target PSD to optimize the SRG/sub-SRG";
+      }
+      leaf psd-reference {
+        type org-openroadm-common-types:psd-reference;
+        default "mc-width";
+        description
+          "The PSD reference source for any PSD related attribute, either MC width or NMC width";
+      }
+      leaf port-count-limit {
+        type uint32;
+        description
+          "The port count limit";
+      }
+      leaf max-composite-input-power {
+        type org-openroadm-common-link-types:power-dBm;
+        description
+          "The maximum composite power that can be supported coming into the SRG/sub-SRG";
+      }
+      leaf max-total-bandwidth {
+        type org-openroadm-common-optical-channel-types:frequency-GHz;
+        description
+          "The maximum total bandwidth that can be supported coming into or going out of the SRG/sub-SRG";
+      }
+      leaf available-composite-input-power {
+        type org-openroadm-common-link-types:power-dBm;
+        description
+          "The remaining composite power add for the SRG/sub-SRG";
+      }
+      leaf available-total-bandwidth {
+        type org-openroadm-common-optical-channel-types:frequency-GHz;
+        description
+          "The remaining total bandwidth for the SRG/sub-SRG";
+      }
+    }
+  }
+
+  grouping capabilities {
+    container capability {
+      leaf min-input-psd {
+        type org-openroadm-common-link-types:psd-dBm-50GHz;
+        description
+          "The minimum input PSD for a channel into the SRG/sub-SRG";
+      }
+      leaf max-input-psd {
+        type org-openroadm-common-link-types:psd-dBm-50GHz;
+        description
+          "The maximum input PSD for a channel into the SRG/sub-SRG";
+      }
+      leaf psd-reference {
+        type org-openroadm-common-types:psd-reference;
+        default "mc-width";
+        description
+          "The PSD reference source for any PSD related attribute, either MC width or NMC width";
+      }
+      leaf max-composite-input-power {
+        type org-openroadm-common-link-types:power-dBm;
+        description
+          "The maximum composite (total) power that can be supported coming into the SRG/sub-SRG";
+      }
+      leaf max-total-bandwidth {
+        type org-openroadm-common-optical-channel-types:frequency-GHz;
+        description
+          "The maximum total bandwidth that can be supported coming into or going out of the SRG/sub-SRG";
+      }
+    }
+  }
+
+  grouping mc-profiles {
+    list mc-profile {
+      key "profile-name";
+      leaf profile-name {
+        type string;
+        mandatory true;
+      }
+      leaf center-freq-granularity {
+        type org-openroadm-common-optical-channel-types:frequency-GHz;
+        default "50";
+        config false;
+        description
+          "Granularity of allowed center frequencies. The base frequency for this computation is 193.1 THz (G.694.1)";
+      }
+      leaf min-edge-freq {
+        type org-openroadm-common-optical-channel-types:frequency-THz;
+        config false;
+        description
+          "Minimum edge frequency";
+      }
+      leaf max-edge-freq {
+        type org-openroadm-common-optical-channel-types:frequency-THz;
+        config false;
+        description
+          "Maximum edge frequency";
+      }
+      leaf slot-width-granularity {
+        type org-openroadm-common-optical-channel-types:frequency-GHz;
+        default "50";
+        config false;
+        description
+          "Width of a slot measured in GHz";
+      }
+      leaf min-slot-width {
+        type org-openroadm-common-optical-channel-types:frequency-GHz;
+        description
+          "The minimum slot width in frequency-GHz";
+      }
+      leaf max-slot-width {
+        type org-openroadm-common-optical-channel-types:frequency-GHz;
+        description
+          "The maximum slot width in frequency-GHz";
+      }
+    }
+  }
+}
