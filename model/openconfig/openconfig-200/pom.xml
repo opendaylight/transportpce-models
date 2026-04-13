@@ -19,7 +19,7 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
     <artifactId>openconfig-200</artifactId>
     <packaging>bundle</packaging>
     <name>${project.artifactId}</name>
-    <description>OpenConfig v2.0.0</description>
+    <description>OpenConfig v2.0.2</description>
 
   <dependencies>
     <dependency>
