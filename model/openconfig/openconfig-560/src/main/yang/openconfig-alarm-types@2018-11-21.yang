@@ -8,10 +8,7 @@ module openconfig-alarm-types {
   prefix "oc-alarm-types";
 
   // import some basic types
-  import openconfig-extensions {
-    prefix oc-ext;
-    revision-date "2024-09-19";
-}
+  import openconfig-extensions { prefix oc-ext; revision-date 2024-09-19; }
 
   // meta
   organization "OpenConfig working group";
