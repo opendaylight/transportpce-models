@@ -30,5 +30,6 @@
     <modules>
         <module>openconfig-240119</module>
         <module>openconfig-200</module>
+        <module>openconfig-560</module>
     </modules>
 </project>
