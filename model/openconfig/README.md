@@ -13,8 +13,8 @@ YANG files included here should always come from the above OpenConfig github rep
 
 Model currently packaged are:
 
+- [release v2.0.0](openconfig-200)
+- [release v5.6.0](openconfig-platform-5.6.0, openconfig-terminal-devices-5.6.0, openconfig-system-5.6.0)
+
+release recently removed:
 - [pre-release 2.0](openconfig-240119)
-
-Next version of models that should be integrated at short term is:
-
-- [release v2.0.0]()

@@ -141,7 +141,17 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>openconfig-560</artifactId>
+                <artifactId>openconfig-platform-5.6.0</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>openconfig-terminal-device-5.6.0</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>openconfig-system-5.6.0</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
