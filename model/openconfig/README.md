@@ -13,8 +13,4 @@ YANG files included here should always come from the above OpenConfig github rep
 
 Model currently packaged are:
 
-- [pre-release 2.0](openconfig-240119)
-
-Next version of models that should be integrated at short term is:
-
 - [release v2.0.0]()
