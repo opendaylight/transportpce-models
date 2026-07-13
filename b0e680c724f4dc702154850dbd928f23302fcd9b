@@ -1,0 +1,8 @@
+Code-Review+2: Christophe BETOULE <christophe.betoule@orange.com>
+Verified+1: ODL Required.GHA <releng+odl.required.gha@linuxfoundation.org>
+Verified+1: jenkins-releng ODL
+Submitted-by: Christophe BETOULE <christophe.betoule@orange.com>
+Submitted-at: Mon, 13 Jul 2026 11:47:40 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/c/transportpce/models/+/123597
+Project: transportpce/models
+Branch: refs/heads/master
