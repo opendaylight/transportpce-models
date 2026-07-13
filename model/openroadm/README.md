@@ -17,11 +17,9 @@ YANG files included here should always come from the above OpenROADM github repo
 
 Model currently packaged are:
 
-- [common for 1.2.1 revision](common-1.2.1)
 - [common for 2.2.1 revision](common-2.2.1)
 - [common for 7.1.0 revision](common-7.1.0)
 - [common for 13.1.1 revision](common-13.1.1)
-- [device for 1.2.1 revision](device-1.2.1)
 - [device for 2.2.1 revision](device-2.2.1)
 - [device for 7.1.0 revision](device-7.1.0)
 - [device for 13.1.1 revision](device-13.1.1)
