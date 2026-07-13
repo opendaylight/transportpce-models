@@ -56,11 +56,6 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
             <!-- transportpce-models bundles -->
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>openroadm-common-1.2.1</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>${project.groupId}</groupId>
                 <artifactId>openroadm-common-2.2.1</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -77,11 +72,6 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>openroadm-common-17.1.0</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>${project.groupId}</groupId>
-                <artifactId>openroadm-device-1.2.1</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>

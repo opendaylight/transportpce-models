@@ -28,8 +28,6 @@
     </properties>
 
     <modules>
-        <module>common-1.2.1</module>
-        <module>device-1.2.1</module>
         <module>common-2.2.1</module>
         <module>device-2.2.1</module>
         <module>common-7.1.0</module>
