@@ -16,10 +16,10 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
         <relativePath>../../bundle-parent/pom.xml</relativePath>
     </parent>
 
-    <artifactId>openconfig-system-5.6.0</artifactId>
+    <artifactId>openconfig-interfaces-5.6.0</artifactId>
     <packaging>bundle</packaging>
     <name>${project.artifactId}</name>
-    <description>OpenConfig system v5.6.0</description>
+    <description>OpenConfig interfaces v5.6.0</description>
 
   <dependencies>
     <dependency>
@@ -28,26 +28,8 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>openconfig-interfaces-5.6.0</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>openconfig-terminal-device-5.6.0</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
       <groupId>org.opendaylight.ietf.model</groupId>
-      <artifactId>iana-if-type</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.opendaylight.ietf.model</groupId>
-      <artifactId>rfc6991-ietf-yang-types</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.opendaylight.ietf.model</groupId>
-      <artifactId>rfc6991-ietf-inet-types</artifactId>
+      <artifactId>rfc8343</artifactId>
     </dependency>
     <dependency>
       <groupId>org.opendaylight.yangtools</groupId>
