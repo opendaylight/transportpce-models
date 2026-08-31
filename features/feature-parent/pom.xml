@@ -31,6 +31,13 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
+                <groupId>org.opendaylight.ietf</groupId>
+                <artifactId>ietf-artifacts</artifactId>
+                <version>2.0.6</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
                 <groupId>org.opendaylight.transportpce.models</groupId>
                 <artifactId>transportpce-models-artifacts</artifactId>
                 <version>24.1.0-SNAPSHOT</version>
