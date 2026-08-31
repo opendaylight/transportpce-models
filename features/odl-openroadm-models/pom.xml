@@ -31,10 +31,23 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
         <scope>import</scope>
         <type>pom</type>
       </dependency>
+      <dependency>
+        <groupId>org.opendaylight.mdsal</groupId>
+        <artifactId>mdsal-artifacts</artifactId>
+        <version>14.0.22</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
   <dependencies>
+   <dependency>
+     <groupId>org.opendaylight.mdsal.model</groupId>
+     <artifactId>odl-mdsal-model-rfc8345</artifactId>
+     <type>xml</type>
+     <classifier>features</classifier>
+   </dependency>
     <dependency>
       <groupId>org.opendaylight.transportpce.models</groupId>
       <artifactId>odl-openroadm-devices</artifactId>
