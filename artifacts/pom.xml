@@ -73,6 +73,11 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
       </dependency>
       <dependency>
         <groupId>${project.groupId}</groupId>
+        <artifactId>openroadm-common-6.1.0</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
         <artifactId>openroadm-common-7.1.0</artifactId>
         <version>${project.version}</version>
       </dependency>
@@ -89,6 +94,11 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>openroadm-device-2.2.1</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>openroadm-device-6.1.0</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
