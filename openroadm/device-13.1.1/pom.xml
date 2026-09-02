@@ -28,6 +28,11 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
       <version>${project.version}</version>
     </dependency>
     <dependency>
+      <groupId>org.opendaylight.transportpce.models</groupId>
+      <artifactId>openroadm-device-6.1.0</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
       <groupId>org.opendaylight.yangtools</groupId>
       <artifactId>yang-common</artifactId>
     </dependency>
