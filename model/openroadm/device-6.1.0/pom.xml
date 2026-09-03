@@ -17,10 +17,10 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
         <relativePath>../../bundle-parent/pom.xml</relativePath>
     </parent>
 
-    <artifactId>openroadm-common-7.1.0</artifactId>
+    <artifactId>openroadm-device-6.1.0</artifactId>
     <packaging>bundle</packaging>
     <name>${project.artifactId}</name>
-    <description>OpenROADM common in 7.1.0 revision</description>
+    <description>OpenROADM device in 6.1.0 revision</description>
 
     <dependencies>
         <dependency>
@@ -28,16 +28,12 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
             <artifactId>openroadm-common-6.1.0</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opendaylight.yangtools</groupId>
-            <artifactId>yang-common</artifactId>
+            <groupId>org.opendaylight.ietf.model</groupId>
+            <artifactId>rfc6991-ietf-inet-types</artifactId>
         </dependency>
         <dependency>
             <groupId>org.opendaylight.ietf.model</groupId>
             <artifactId>rfc6991-ietf-yang-types</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
         </dependency>
     </dependencies>
 </project>

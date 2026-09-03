@@ -17,27 +17,15 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
         <relativePath>../../bundle-parent/pom.xml</relativePath>
     </parent>
 
-    <artifactId>openroadm-common-7.1.0</artifactId>
+    <artifactId>openroadm-common-6.1.0</artifactId>
     <packaging>bundle</packaging>
     <name>${project.artifactId}</name>
-    <description>OpenROADM common in 7.1.0 revision</description>
+    <description>OpenROADM common in 6.1.0 revision</description>
 
     <dependencies>
         <dependency>
-            <groupId>org.opendaylight.transportpce.models</groupId>
-            <artifactId>openroadm-common-6.1.0</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.opendaylight.yangtools</groupId>
             <artifactId>yang-common</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.opendaylight.ietf.model</groupId>
-            <artifactId>rfc6991-ietf-yang-types</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
         </dependency>
     </dependencies>
 </project>
