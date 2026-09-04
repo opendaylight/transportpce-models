@@ -26,6 +26,30 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "5fb921f7_b63809db",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 7446
+      },
+      "writtenOn": "2026-09-04T06:57:58Z",
+      "side": 1,
+      "message": "oh... thank you for the typo which is not a revealing slip of the tongue!",
+      "parentUuid": "336f65fe_6fe720d3",
+      "range": {
+        "startLine": 7,
+        "startChar": 37,
+        "endLine": 7,
+        "endChar": 42
+      },
+      "revId": "da9eba6a33572e4beaa2d2df6b1a06caeccce864",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "96f2875a_613b1ce3",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 1
