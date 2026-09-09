@@ -30,11 +30,23 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
         </dependency>
         <dependency>
             <groupId>org.opendaylight.transportpce.models</groupId>
+            <artifactId>openroadm-common-9.1.0</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.opendaylight.transportpce.models</groupId>
             <artifactId>openroadm-common-13.1.1</artifactId>
         </dependency>
         <dependency>
             <groupId>org.opendaylight.transportpce.models</groupId>
             <artifactId>openroadm-device-6.1.0</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.opendaylight.transportpce.models</groupId>
+            <artifactId>openroadm-device-8.0.0</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.opendaylight.transportpce.models</groupId>
+            <artifactId>openroadm-device-12.1.0</artifactId>
         </dependency>
         <dependency>
             <groupId>org.opendaylight.yangtools</groupId>
