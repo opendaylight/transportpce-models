@@ -36,7 +36,10 @@
         <module>device-6.1.0</module>
         <module>common-7.1.0</module>
         <module>device-7.1.0</module>
+        <module>common-9.1.0</module>
         <module>common-13.1.1</module>
+        <module>device-8.0.0</module>
+        <module>device-12.1.0</module>
         <module>device-13.1.1</module>
         <module>common-17.1.0</module>
         <module>device-17.1.0</module>
