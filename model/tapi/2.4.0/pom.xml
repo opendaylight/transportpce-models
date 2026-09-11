@@ -32,4 +32,23 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
             <artifactId>guava</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <configuration>
+                    <instructions>
+                        <!-- override plugin default of excluding packages containing 'impl' or 'internal' -->
+                        <Export-Package>
+                            org.opendaylight.yang.gen.v1.urn.onf.otcc.yang.tapi.connectivity.rev221121.connectivity.service.internal.point,
+                            {local-packages}
+                        </Export-Package>
+                        <Private-Package/>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

@@ -24,6 +24,12 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
 
     <dependencies>
         <dependency>
+            <groupId>org.opendaylight.ietf</groupId>
+            <artifactId>odl-ietf-model-rfc8345</artifactId>
+            <type>xml</type>
+            <classifier>features</classifier>
+        </dependency>
+        <dependency>
             <groupId>org.opendaylight.transportpce.models</groupId>
             <artifactId>odl-openroadm-devices</artifactId>
             <classifier>features</classifier>
